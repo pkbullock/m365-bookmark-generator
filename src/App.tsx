@@ -33,7 +33,7 @@ function App() {
                     <FileText size={24} className="text-primary-foreground" />
                   </div>
                   <h1 className="text-4xl font-light text-foreground">
-                    Microsoft 365 Bookmarks
+                    Microsoft 365 Bookmarks Generator
                   </h1>
                 </div>
                 <div className="flex-1 flex justify-end">
@@ -41,8 +41,7 @@ function App() {
                 </div>
               </div>
               <p className="text-lg font-light text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                Generate and download standardized Microsoft 365 bookmark collections 
-                for seamless import into Microsoft Edge browser
+                Generate and download Microsoft 365 bookmark collections for easy import into Microsoft Edge, ideal for users who create new Edge profiles regularly
               </p>
             </header>
 
