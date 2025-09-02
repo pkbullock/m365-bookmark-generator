@@ -22,14 +22,14 @@
     "name": "Microsoft 365 Admin",
     "description": "Key administrative portals for managing Microsoft 365 and Azure services",
     "bookmarks":[      
-      { "id": "23", "name": "Microsoft 365 Admin Center", "url": "https://admin.microsoft.com", "folder": "Microsoft 365" },
-      { "id": "29", "name": "Microsoft Purview", "url": "https://purview.microsoft.com/", "folder" : "Microsoft 365" },
+      { "id": "23", "name": "Microsoft 365 Admin Center", "url": "https://admin.microsoft.com", "folder": "Microsoft 365 Admin" },
+      { "id": "29", "name": "Microsoft Purview", "url": "https://purview.microsoft.com/", "folder" : "Microsoft 365 Admin" },
       { "id": "31", "name": "Azure Portal", "url": "https://portal.azure.com/", "folder": "Azure" },
       { "id": "31", "name": "Azure AI Foundry", "url": "https://ai.azure.com/", "folder": "Azure" },
       { "id": "32", "name": "Azure OpenAI Studio", "url": "https://oai.azure.com/", "folder": "Azure" },
       { "id": "33", "name": "Microsoft Entra", "url": "https://entra.microsoft.com/", "folder": "Azure" },
-      { "id": "34", "name": "Power Platform Admin Center", "url": "https://admin.powerplatform.microsoft.com/", "folder": "Microsoft 365" },
-      { "id": "35", "name": "Microsoft Priva", "url": "https://purview.microsoft.com/priva/home", "folder": "Microsoft 365" }
+      { "id": "34", "name": "Power Platform Admin Center", "url": "https://admin.powerplatform.microsoft.com/", "folder": "Microsoft 365 Admin" },
+      { "id": "35", "name": "Microsoft Priva", "url": "https://purview.microsoft.com/priva/home", "folder": "Microsoft 365 Admin" }
     ]
   },
   {
