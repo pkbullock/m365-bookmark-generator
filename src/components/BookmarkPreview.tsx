@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Folder, Globe, Download, Eye, FileText } from '@phosphor-icons/react';
+import { FolderIcon, GlobeIcon, DownloadIcon, EyeIcon, FileTextIcon } from '@phosphor-icons/react';
 import { type Bookmark, downloadBookmarkFile } from '@/lib/bookmarks';
 import { toast } from 'sonner';
 
@@ -37,7 +37,7 @@ export function BookmarkPreview({ bookmarks }: BookmarkPreviewProps) {
         <div className="text-center md:text-left">
           <div className="inline-flex items-center gap-3 mb-3">
             <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
-              <Eye size={20} className="text-primary" />
+              <EyeIcon size={20} className="text-primary" />
             </div>
             <h2 className="text-2xl font-light text-foreground">Preview & Download</h2>
           </div>
@@ -50,7 +50,7 @@ export function BookmarkPreview({ bookmarks }: BookmarkPreviewProps) {
           disabled={bookmarks.length === 0}
           className="px-8 py-3 h-auto text-base shadow-lg hover:shadow-xl transition-shadow"
         >
-          <Download size={18} className="mr-3" />
+          <DownloadIcon size={18} className="mr-3" />
           Download Bookmarks
         </Button>
       </div>
@@ -60,7 +60,7 @@ export function BookmarkPreview({ bookmarks }: BookmarkPreviewProps) {
           <div className="bg-gradient-to-br from-primary/5 via-primary/3 to-accent/5 border border-primary/20 rounded-xl p-8 shadow-sm">
             <div className="flex items-center gap-4 mb-6">
               <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center shadow-sm">
-                <Globe size={24} className="text-primary" />
+                <GlobeIcon size={24} className="text-primary" />
               </div>
               <div>
                 <h3 className="text-xl font-medium">Microsoft 365 Bookmarks</h3>
@@ -75,7 +75,7 @@ export function BookmarkPreview({ bookmarks }: BookmarkPreviewProps) {
                 <div key={folder} className="ml-4">
                   <div className="flex items-center gap-3 mb-3">
                     <div className="w-6 h-6 bg-accent/10 rounded-md flex items-center justify-center">
-                      <Folder size={14} className="text-accent" />
+                      <FolderIcon size={14} className="text-accent" />
                     </div>
                     <span className="font-medium text-base">{folder}</span>
                     <div className="px-2 py-1 bg-fluent-neutral-20 rounded-full">
@@ -104,7 +104,7 @@ export function BookmarkPreview({ bookmarks }: BookmarkPreviewProps) {
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="flex items-center gap-3 text-xl font-medium">
                 <div className="w-8 h-8 bg-accent/10 rounded-md flex items-center justify-center">
-                  <FileText size={18} className="text-accent" />
+                  <FileTextIcon size={18} className="text-accent" />
                 </div>
                 Import Instructions
               </CardTitle>
@@ -154,7 +154,7 @@ export function BookmarkPreview({ bookmarks }: BookmarkPreviewProps) {
         <Card className="border shadow-sm">
           <CardContent className="flex flex-col items-center justify-center py-20">
             <div className="w-20 h-20 bg-fluent-neutral-20 rounded-full flex items-center justify-center mb-8">
-              <Download size={40} className="text-muted-foreground" />
+              <DownloadIcon size={40} className="text-muted-foreground" />
             </div>
             <h3 className="text-2xl font-medium mb-4">No bookmarks to preview</h3>
             <p className="text-muted-foreground text-center max-w-md font-light leading-relaxed mb-6">

@@ -1,4 +1,4 @@
-import { Heart, Shield } from '@phosphor-icons/react';
+import { HeartIcon, ShieldIcon } from '@phosphor-icons/react';
 
 export function Footer() {
   return (
@@ -7,14 +7,14 @@ export function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-6 text-sm text-muted-foreground">
             <div className="flex items-center gap-2">
-              <Shield size={16} />
-              <span>All data processed locally in your browser</span>
+              <ShieldIcon size={16} />
+              <span>All data processed locally in your browser. No bookmarks are read or automatically changed.</span>
             </div>
           </div>
           
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
             <span>Built with</span>
-            <Heart size={16} className="text-destructive" />
+            <HeartIcon size={16} className="text-destructive" />
             <span>by Paul Bullock</span>
           </div>
         </div>
