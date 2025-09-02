@@ -18,6 +18,10 @@ export default defineConfig({
     //createIconImportProxy() as PluginOption,
     //sparkPlugin() as PluginOption,
   ],
+  publicDir: 'public',
+  server: {
+    port: 5000
+  },
   resolve: {
     alias: {
       '@': resolve(projectRoot, 'src')
