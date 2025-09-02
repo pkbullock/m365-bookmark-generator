@@ -146,13 +146,13 @@ export function BookmarkManager({ bookmarks, onBookmarksChange }: BookmarkManage
           <p className="text-muted-foreground font-light">Add, edit, or remove bookmarks from your collection</p>
         </div>
         <div>
-          <Button 
+          {/* <Button 
             className="px-6 py-2 h-auto" 
             onClick={() => setIsAddDialogOpen(true)}
           >
             <PlusIcon size={16} className="mr-2" />
             Add Bookmark
-          </Button>
+          </Button> */}
           
           <Dialog open={isAddDialogOpen} onOpenChange={setIsAddDialogOpen}>
             <DialogContent className="border shadow-2xl">
@@ -267,14 +267,16 @@ export function BookmarkManager({ bookmarks, onBookmarksChange }: BookmarkManage
             </div>
             <h3 className="text-xl font-medium mb-3">No bookmarks yet</h3>
             <p className="text-muted-foreground text-center mb-6 max-w-md font-light leading-relaxed">
-              Start by selecting a template or add your first bookmark to begin building your collection
+              {/* Start by selecting a template or add your first bookmark to begin building your collection */}
+              Start by selecting a template to manage your Microsoft 365 bookmark collection before download
+
             </p>
-            <Button 
+            {/* <Button 
               onClick={() => setIsAddDialogOpen(true)}
             >
               <PlusIcon size={16} className="mr-2" />
               Add First Bookmark
-            </Button>
+            </Button> */}
           </CardContent>
         </Card>
       )}

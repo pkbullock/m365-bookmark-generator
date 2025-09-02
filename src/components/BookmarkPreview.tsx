@@ -158,15 +158,16 @@ export function BookmarkPreview({ bookmarks }: BookmarkPreviewProps) {
             </div>
             <h3 className="text-2xl font-medium mb-4">No bookmarks to preview</h3>
             <p className="text-muted-foreground text-center max-w-md font-light leading-relaxed mb-6">
-              Select a template or add bookmarks to see the preview and download your Microsoft 365 bookmark collection
+              {/* Select a template or add bookmarks to see the preview and download your Microsoft 365 bookmark collection */}
+              Select a template to see the preview and download your Microsoft 365 bookmark collection
             </p>
             <div className="flex gap-3">
               <Button variant="outline">
                 Go to Templates
               </Button>
-              <Button>
+              {/* <Button>
                 Add Bookmarks
-              </Button>
+              </Button> */}
             </div>
           </CardContent>
         </Card>
