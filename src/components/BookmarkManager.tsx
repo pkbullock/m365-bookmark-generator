@@ -234,14 +234,14 @@ export function BookmarkManager({ bookmarks, onBookmarksChange }: BookmarkManage
                       </p>
                     </div>
                     <div className="flex items-center gap-2 ml-4">
-                      <Button
+                      {/* <Button
                         size="sm"
                         variant="ghost"
                         className="w-8 h-8 p-0"
                         onClick={() => handleEditBookmark(bookmark)}
                       >
                         <PencilIcon size={14} />
-                      </Button>
+                      </Button> */}
                       <Button
                         size="sm"
                         variant="ghost"
