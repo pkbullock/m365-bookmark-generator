@@ -1,0 +1,46 @@
+[
+  {
+    "id": "standard",
+    "name": "Standard Microsoft 365",
+    "description": "Essential Microsoft 365 services for everyday productivity",
+    "bookmarks": [
+      { "id": "1", "name": "Microsoft 365 Home", "url": "https://www.office.com/", "folder": "Microsoft 365" },
+      { "id": "2", "name": "Outlook", "url": "https://outlook.office.com/", "folder": "Microsoft 365" },
+      { "id": "3", "name": "Word Online", "url": "https://office.live.com/start/Word.aspx", "folder": "Microsoft 365" },
+      { "id": "4", "name": "Excel Online", "url": "https://office.live.com/start/Excel.aspx", "folder": "Microsoft 365" },
+      { "id": "5", "name": "PowerPoint Online", "url": "https://office.live.com/start/PowerPoint.aspx", "folder": "Microsoft 365" },
+      { "id": "6", "name": "OneNote", "url": "https://www.onenote.com/", "folder": "Microsoft 365" },
+      { "id": "12", "name": "Azure DevOps", "url": "https://dev.azure.com/", "folder": "Azure" },
+      { "id": "8", "name": "Teams", "url": "https://teams.microsoft.com/", "folder": "Collaboration" },
+      { "id": "16", "name": "Security & Compliance", "url": "https://protection.office.com/", "folder": "Microsoft 365" },
+      { "id": "10", "name": "Yammer", "url": "https://www.yammer.com/", "folder": "Collaboration" }
+    ]
+  },
+  {
+    "id": "administrative",
+    "name": "Microsoft 365 Admin",
+    "description": "Key administrative portals for managing Microsoft 365 and Azure services",
+    "bookmarks":[      
+      { "id": "23", "name": "Microsoft 365 Admin Center", "url": "https://admin.microsoft.com", "folder": "Microsoft 365" },
+      { "id": "27", "name": "SharePoint Admin Center", "url": "https://admin.sharepoint.com/", "folder" : "Microsoft 365" },
+      { "id": "29", "name": "Microsoft Defender", "url": "https://security.microsoft.com/", "folder" : "Azure" },
+      { "id": "31", "name": "Azure Portal", "url": "https://portal.azure.com/", "folder": "Azure" }
+    ]
+  },
+  {
+    "id": "end-user-essentials",
+    "name": "End User Essentials",
+    "description": "Commonly used Microsoft 365 services for end users",
+    "bookmarks": [
+      { "id": "34", "name": "Outlook", "url": "https://outlook.office.com/", "folder": "Daily Apps" },
+      { "id": "36", "name": "OneDrive", "url": "https://onedrive.live.com/", "folder": "Daily Apps" },
+      { "id": "38", "name": "Yammer", "url": "https://www.yammer.com/", "folder": "Communication" },
+      { "id": "40", "name": "Excel Online", "url": "https://office.live.com/start/Excel.aspx", "folder": "Daily Apps" },
+      { "id": "42", "name": "OneNote", "url": "https://www.onenote.com/", "folder": "Office Apps" },
+      { "id": "43", "name": "Outlook", "url": "https://outlook.office.com/", "folder": "Daily Apps" },
+      { "id": "44", "name": "OneDrive", "url": "https://onedrive.live.com/", "folder": "Daily Apps" },
+      { "id": "45", "name": "Yammer", "url": "https://www.yammer.com/", "folder": "Communication" },
+      { "id": "46", "name": "OneNote", "url": "https://www.onenote.com/", "folder": "Office Apps" }
+    ]
+  }
+]
