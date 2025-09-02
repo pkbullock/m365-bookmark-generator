@@ -37,15 +37,15 @@
     "name": "Microsoft 365 Personal - End User Essentials",
     "description": "Commonly used Microsoft 365 services for end users",
     "bookmarks": [
-      { "id": "34", "name": "Outlook", "url": "https://outlook.office.com/", "folder": "Daily Apps" },
-      { "id": "36", "name": "OneDrive", "url": "https://onedrive.live.com/", "folder": "Daily Apps" },
+      { "id": "34", "name": "Outlook", "url": "https://outlook.office.com/", "folder": "Personal Apps" },
+      { "id": "36", "name": "OneDrive", "url": "https://onedrive.live.com/", "folder": "Personal Apps" },
       { "id": "38", "name": "Yammer", "url": "https://www.yammer.com/", "folder": "Communication" },
-      { "id": "40", "name": "Excel Online", "url": "https://office.live.com/start/Excel.aspx", "folder": "Daily Apps" },
-      { "id": "42", "name": "OneNote", "url": "https://www.onenote.com/", "folder": "Office Apps" },
-      { "id": "43", "name": "Outlook", "url": "https://outlook.office.com/", "folder": "Daily Apps" },
-      { "id": "44", "name": "OneDrive", "url": "https://onedrive.live.com/", "folder": "Daily Apps" },
-      { "id": "45", "name": "Yammer", "url": "https://www.yammer.com/", "folder": "Communication" },
-      { "id": "46", "name": "OneNote", "url": "https://www.onenote.com/", "folder": "Office Apps" }
+      { "id": "40", "name": "Excel Online", "url": "https://office.live.com/start/Excel.aspx", "folder": "Personal Apps" },
+      { "id": "42", "name": "OneNote", "url": "https://www.onenote.com/", "folder": "Personal Apps" },
+      { "id": "43", "name": "Outlook", "url": "https://outlook.office.com/", "folder": "Personal Apps" },
+      { "id": "44", "name": "OneDrive", "url": "https://onedrive.live.com/", "folder": "Personal Apps" },
+      { "id": "45", "name": "Yammer", "url": "https://www.yammer.com/", "folder": "Personal Apps" },
+      { "id": "46", "name": "OneNote", "url": "https://www.onenote.com/", "folder": "Personal Apps" }
     ]
   },
 
@@ -54,7 +54,7 @@
     "name": "Microsoft 365 Community & Power Platform",
     "description": "Links to M365 Community Sites and GitHub Repositories for Microsoft 365 Community",
     "bookmarks": [
-      { "id": "51", "name": "M365 Community Site", "url": "https://pnp.github.io", "folder": "M365 M365 Community Sites" },
+      { "id": "51", "name": "M365 Community Site", "url": "https://pnp.github.io", "folder": "M365 Community Sites" },
       { "id": "52", "name": "PnP Script Samples", "url": "https://pnp.github.io/script-samples/", "folder": "M365 Community Sites" },
       { "id": "53", "name": "PnP SPFx Web Parts", "url": "https://github.com/pnp/sp-dev-fx-webparts", "folder": "M365 Community Sites" },
       { "id": "54", "name": "PnP Js", "url":"https://github.com/pnp/pnpjs", "folder": "M365 Community Sites" },
