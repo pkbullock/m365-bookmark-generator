@@ -5,7 +5,7 @@ import { Label } from '@/components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Plus, Pencil, Trash, Folder, FolderOpen, Settings } from '@phosphor-icons/react';
+import { PlusIcon, PencilIcon, TrashIcon, FolderIcon, FolderOpenIcon, GearIcon } from '@phosphor-icons/react';
 import { type Bookmark, validateUrl, generateUniqueId } from '@/lib/bookmarks';
 import { toast } from 'sonner';
 
@@ -139,7 +139,7 @@ export function BookmarkManager({ bookmarks, onBookmarksChange }: BookmarkManage
         <div className="text-center md:text-left">
           <div className="inline-flex items-center gap-3 mb-3">
             <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
-              <Settings size={20} className="text-primary" />
+              <GearIcon size={20} className="text-primary" />
             </div>
             <h2 className="text-2xl font-light text-foreground">Manage Bookmarks</h2>
           </div>
@@ -150,7 +150,7 @@ export function BookmarkManager({ bookmarks, onBookmarksChange }: BookmarkManage
             className="px-6 py-2 h-auto" 
             onClick={() => setIsAddDialogOpen(true)}
           >
-            <Plus size={16} className="mr-2" />
+            <PlusIcon size={16} className="mr-2" />
             Add Bookmark
           </Button>
           
@@ -210,7 +210,7 @@ export function BookmarkManager({ bookmarks, onBookmarksChange }: BookmarkManage
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="flex items-center gap-3 text-lg font-medium">
                 <div className="w-8 h-8 bg-accent/10 rounded-md flex items-center justify-center">
-                  <FolderOpen size={18} className="text-accent" />
+                  <FolderOpenIcon size={18} className="text-accent" />
                 </div>
                 <span>{folder}</span>
                 <div className="px-2 py-1 bg-fluent-neutral-20 rounded-full">
@@ -240,7 +240,7 @@ export function BookmarkManager({ bookmarks, onBookmarksChange }: BookmarkManage
                         className="w-8 h-8 p-0"
                         onClick={() => handleEditBookmark(bookmark)}
                       >
-                        <Pencil size={14} />
+                        <PencilIcon size={14} />
                       </Button>
                       <Button
                         size="sm"
@@ -248,7 +248,7 @@ export function BookmarkManager({ bookmarks, onBookmarksChange }: BookmarkManage
                         className="w-8 h-8 p-0 hover:bg-destructive/10 hover:text-destructive"
                         onClick={() => handleDeleteBookmark(bookmark.id)}
                       >
-                        <Trash size={14} />
+                        <TrashIcon size={14} />
                       </Button>
                     </div>
                   </div>
@@ -263,7 +263,7 @@ export function BookmarkManager({ bookmarks, onBookmarksChange }: BookmarkManage
         <Card className="border shadow-sm">
           <CardContent className="flex flex-col items-center justify-center py-16">
             <div className="w-16 h-16 bg-fluent-neutral-20 rounded-full flex items-center justify-center mb-6">
-              <Folder size={32} className="text-muted-foreground" />
+              <FolderIcon size={32} className="text-muted-foreground" />
             </div>
             <h3 className="text-xl font-medium mb-3">No bookmarks yet</h3>
             <p className="text-muted-foreground text-center mb-6 max-w-md font-light leading-relaxed">
@@ -272,7 +272,7 @@ export function BookmarkManager({ bookmarks, onBookmarksChange }: BookmarkManage
             <Button 
               onClick={() => setIsAddDialogOpen(true)}
             >
-              <Plus size={16} className="mr-2" />
+              <PlusIcon size={16} className="mr-2" />
               Add First Bookmark
             </Button>
           </CardContent>
