@@ -36,7 +36,13 @@ function App() {
                     Microsoft 365 Bookmarks Generator
                   </h1>
                 </div>
-                <div className="flex-1 flex justify-end">
+                <div className="flex-1 flex justify-end items-center gap-2">
+                  <span
+                    className="flex items-center justify-center h-9 px-3 rounded bg-yellow-400 text-xs font-semibold text-yellow-900 shadow-sm"
+                    style={{ minWidth: '48px' }}
+                  >
+                    Beta
+                  </span>
                   <ThemeToggle />
                 </div>
               </div>
@@ -110,26 +116,26 @@ function App() {
               </TabsList>
 
               <TabsContent value="templates" className="space-y-6">
-                <TemplateSelect 
+                <TemplateSelect
                   selectedTemplate={selectedTemplate}
                   onTemplateSelect={handleTemplateSelect}
                 />
               </TabsContent>
 
               <TabsContent value="manage" className="space-y-6">
-                <BookmarkManager 
+                <BookmarkManager
                   bookmarks={bookmarks}
                   onBookmarksChange={setBookmarks}
                 />
               </TabsContent>
 
               <TabsContent value="preview" className="space-y-6">
-                <BookmarkPreview bookmarks={bookmarks} />
+                <BookmarkPreview bookmarks={bookmarks} groupName={selectedTemplate?.name} />
               </TabsContent>
             </Tabs>
           </div>
         </div>
-        
+
         <Footer />
         <Toaster />
       </div>

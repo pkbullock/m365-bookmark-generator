@@ -6,9 +6,18 @@ import { toast } from 'sonner';
 
 interface BookmarkPreviewProps {
   bookmarks: Bookmark[];
+  groupName?: string;
 }
 
-export function BookmarkPreview({ bookmarks }: BookmarkPreviewProps) {
+function formatFileName(name: string) {
+  return name
+    .toLowerCase()
+    .replace(/[^a-z0-9\s-]/g, '') // remove special characters
+    .replace(/\s+/g, '-')         // replace spaces with hyphens
+    + '.html';
+}
+
+export function BookmarkPreview({ bookmarks, groupName }: BookmarkPreviewProps) {
   const groupedBookmarks = bookmarks.reduce((acc, bookmark) => {
     const folder = bookmark.folder || 'Uncategorized';
     if (!acc[folder]) acc[folder] = [];
@@ -23,7 +32,9 @@ export function BookmarkPreview({ bookmarks }: BookmarkPreviewProps) {
     }
 
     try {
-      downloadBookmarkFile(bookmarks, 'microsoft-365-bookmarks.html');
+      //downloadBookmarkFile(bookmarks, 'microsoft-365-bookmarks.html');
+      const fileName = formatFileName(groupName || 'microsoft-365-bookmarks');
+      downloadBookmarkFile(bookmarks, fileName);
       toast.success('Bookmark file downloaded successfully!');
     } catch (error) {
       console.error('Download error:', error);
@@ -45,7 +56,14 @@ export function BookmarkPreview({ bookmarks }: BookmarkPreviewProps) {
             Review your bookmark collection and download the file for Edge import
           </p>
         </div>
-
+        <Button
+          onClick={handleDownload}
+          disabled={bookmarks.length === 0}
+          className="px-8 py-3 h-auto text-base shadow-lg hover:shadow-xl transition-shadow"
+        >
+          <DownloadIcon size={18} className="mr-3" />
+          Download Bookmarks
+        </Button>
       </div>
 
       {bookmarks.length > 0 ? (
@@ -60,18 +78,10 @@ export function BookmarkPreview({ bookmarks }: BookmarkPreviewProps) {
                   </div>
                   Import Instructions
                 </div>
-                <Button
-                  onClick={handleDownload}
-                  disabled={bookmarks.length === 0}
-                  className="px-8 py-3 h-auto text-base shadow-lg hover:shadow-xl transition-shadow"
-                >
-                  <DownloadIcon size={18} className="mr-3" />
-                  Download Bookmarks
-                </Button>
+
               </CardTitle>
             </CardHeader>
-            <CardContent className="pt-6">
-
+            <CardContent className="pt-2">
               <div className="space-y-4">
                 <p className="font-medium text-base">To import these bookmarks into Microsoft Edge:</p>
                 <div className="bg-fluent-neutral-10 rounded-xl p-6 space-y-4">
