@@ -4,32 +4,84 @@
     "name": "Standard Microsoft 365",
     "description": "Essential Microsoft 365 services for everyday productivity",
     "bookmarks": [
-      { "id": "1", "name": "Microsoft 365", "url": "https://www.office.com/", "folder": "Microsoft 365" },
-      { "id": "2", "name": "Outlook", "url": "https://outlook.office.com/", "folder": "Microsoft 365" },
-      { "id": "3", "name": "Word Online", "url": "https://word.cloud.microsoft", "folder": "Microsoft 365" },
-      { "id": "4", "name": "Excel Online", "url": "https://excel.cloud.microsoft/", "folder": "Microsoft 365" },
-      { "id": "5", "name": "PowerPoint Online", "url": "https://powerpoint.cloud.microsoft/", "folder": "Microsoft 365" },
-      { "id": "6", "name": "OneNote", "url": "https://www.onenote.com/", "folder": "Microsoft 365" },
-      { "id": "7", "name": "Microsoft 365 Copilot", "url": "https://m365.cloud.microsoft/chat", "folder": "Microsoft 365" },
-      { "id": "8", "name": "Teams", "url": "https://teams.microsoft.com/", "folder": "Microsoft 365" },
-      { "id": "10", "name": "Viva Engage", "url": "https://web.yammer.com/", "folder": "Microsoft 365" },
-      { "id": "11", "name": "SharePoint", "url": "https://go.microsoft.com/fwlink/?linkid=2325550&clcid=0x809&culture=en-gb&country=gb", "folder": "Microsoft 365" },
-      { "id": "12", "name": "Clipchamp", "url": "https://m365.cloud.microsoft/launch/clipchamp?", "folder": "Microsoft 365" }
-    ]
-  },
-  {
-    "id": "administrative",
-    "name": "Microsoft 365 Admin",
-    "description": "Key administrative portals for managing Microsoft 365 and Azure services",
-    "bookmarks":[      
-      { "id": "23", "name": "Microsoft 365 Admin Center", "url": "https://admin.microsoft.com", "folder": "Microsoft 365 Admin" },
-      { "id": "29", "name": "Microsoft Purview", "url": "https://purview.microsoft.com/", "folder" : "Microsoft 365 Admin" },
-      { "id": "31", "name": "Azure Portal", "url": "https://portal.azure.com/", "folder": "Azure" },
-      { "id": "31", "name": "Azure AI Foundry", "url": "https://ai.azure.com/", "folder": "Azure" },
-      { "id": "32", "name": "Azure OpenAI Studio", "url": "https://oai.azure.com/", "folder": "Azure" },
-      { "id": "33", "name": "Microsoft Entra", "url": "https://entra.microsoft.com/", "folder": "Azure" },
-      { "id": "34", "name": "Power Platform Admin Center", "url": "https://admin.powerplatform.microsoft.com/", "folder": "Microsoft 365 Admin" },
-      { "id": "35", "name": "Microsoft Priva", "url": "https://purview.microsoft.com/priva/home", "folder": "Microsoft 365 Admin" }
+      {
+        "id": "1",
+        "name": "Microsoft 365",
+        "url": "https://www.office.com/",
+        "folder": "Microsoft 365"
+      },
+      {
+        "id": "2",
+        "name": "Outlook",
+        "url": "https://outlook.office.com/",
+        "folder": "Microsoft 365"
+      },
+      {
+        "id": "3",
+        "name": "Word Online",
+        "url": "https://word.cloud.microsoft",
+        "folder": "Microsoft 365"
+      },
+      {
+        "id": "4",
+        "name": "Excel Online",
+        "url": "https://excel.cloud.microsoft/",
+        "folder": "Microsoft 365"
+      },
+      {
+        "id": "5",
+        "name": "PowerPoint Online",
+        "url": "https://powerpoint.cloud.microsoft/",
+        "folder": "Microsoft 365"
+      },
+      {
+        "id": "6",
+        "name": "OneNote",
+        "url": "https://www.onenote.com/",
+        "folder": "Microsoft 365"
+      },
+      {
+        "id": "7",
+        "name": "Microsoft 365 Copilot",
+        "url": "https://m365.cloud.microsoft/chat",
+        "folder": "Microsoft 365"
+      },
+      {
+        "id": "8",
+        "name": "Teams",
+        "url": "https://teams.microsoft.com/",
+        "folder": "Microsoft 365"
+      },
+      {
+        "id": "10",
+        "name": "Viva Engage",
+        "url": "https://web.yammer.com/",
+        "folder": "Microsoft 365"
+      },
+      {
+        "id": "11",
+        "name": "SharePoint",
+        "url": "https://go.microsoft.com/fwlink/?linkid=2325550&clcid=0x809&culture=en-gb&country=gb",
+        "folder": "Microsoft 365"
+      },
+      {
+        "id": "12",
+        "name": "Clipchamp",
+        "url": "https://m365.cloud.microsoft/launch/clipchamp",
+        "folder": "Microsoft 365"
+      },
+      {
+        "id": "13",
+        "name": "My Account",
+        "url": "https://myaccount.microsoft.com",
+        "folder": "Microsoft 365"
+      },
+      {
+        "id": "14",
+        "name": "My Access",
+        "url": "https://myaccess.microsoft.com",
+        "folder": "Microsoft 365"
+      }
     ]
   },
   {
@@ -37,43 +89,441 @@
     "name": "Microsoft 365 Personal - End User Essentials",
     "description": "Commonly used Microsoft 365 services for end users",
     "bookmarks": [
-      { "id": "34", "name": "Outlook", "url": "https://outlook.office.com/", "folder": "Personal Apps" },
-      { "id": "36", "name": "OneDrive", "url": "https://onedrive.live.com/", "folder": "Personal Apps" },
-      { "id": "38", "name": "Yammer", "url": "https://www.yammer.com/", "folder": "Communication" },
-      { "id": "40", "name": "Excel Online", "url": "https://office.live.com/start/Excel.aspx", "folder": "Personal Apps" },
-      { "id": "42", "name": "OneNote", "url": "https://www.onenote.com/", "folder": "Personal Apps" },
-      { "id": "43", "name": "Outlook", "url": "https://outlook.office.com/", "folder": "Personal Apps" },
-      { "id": "44", "name": "OneDrive", "url": "https://onedrive.live.com/", "folder": "Personal Apps" },
-      { "id": "45", "name": "Yammer", "url": "https://www.yammer.com/", "folder": "Personal Apps" },
-      { "id": "46", "name": "OneNote", "url": "https://www.onenote.com/", "folder": "Personal Apps" }
+      {
+        "id": "100",
+        "name": "Outlook",
+        "url": "https://outlook.office.com/",
+        "folder": "Personal Apps"
+      },
+      {
+        "id": "101",
+        "name": "OneDrive",
+        "url": "https://onedrive.live.com/",
+        "folder": "Personal Apps"
+      },
+      {
+        "id": "102",
+        "name": "Yammer",
+        "url": "https://www.yammer.com/",
+        "folder": "Communication"
+      },
+      {
+        "id": "103",
+        "name": "Excel Online",
+        "url": "https://office.live.com/start/Excel.aspx",
+        "folder": "Personal Apps"
+      },
+      {
+        "id": "104",
+        "name": "OneNote",
+        "url": "https://www.onenote.com/",
+        "folder": "Personal Apps"
+      },
+      {
+        "id": "105",
+        "name": "Outlook",
+        "url": "https://outlook.office.com/",
+        "folder": "Personal Apps"
+      },
+      {
+        "id": "106",
+        "name": "OneDrive",
+        "url": "https://onedrive.live.com/",
+        "folder": "Personal Apps"
+      },
+      {
+        "id": "107",
+        "name": "Yammer",
+        "url": "https://www.yammer.com/",
+        "folder": "Personal Apps"
+      },
+      {
+        "id": "108",
+        "name": "OneNote",
+        "url": "https://www.onenote.com/",
+        "folder": "Personal Apps"
+      }
     ]
   },
-
+  {
+    "id": "administrative",
+    "name": "Microsoft 365 Admin",
+    "description": "Key administrative portals for managing Microsoft 365 services",
+    "bookmarks": [
+      {
+        "id": "200",
+        "name": "Microsoft 365 Admin Center",
+        "url": "https://admin.microsoft.com",
+        "folder": "Microsoft 365 Admin"
+      },
+      {
+        "id": "201",
+        "name": "Microsoft Purview",
+        "url": "https://purview.microsoft.com/",
+        "folder": "Microsoft 365 Admin"
+      },
+      {
+        "id": "205",
+        "name": "Microsoft Entra",
+        "url": "https://entra.microsoft.com/",
+        "folder": "Azure"
+      },
+      {
+        "id": "206",
+        "name": "Power Platform Admin Center",
+        "url": "https://admin.powerplatform.microsoft.com/",
+        "folder": "Microsoft 365 Admin"
+      },
+      {
+        "id": "207",
+        "name": "Microsoft Priva",
+        "url": "https://purview.microsoft.com/priva/home",
+        "folder": "Microsoft 365 Admin"
+      },
+      {
+        "id": "208",
+        "name": "Cloud Policy Service",
+        "url": "https://config.office.com/officeSettings/officePolicies",
+        "folder": "Microsoft 365 Admin"
+      },
+      {
+        "id": "209",
+        "name": "SharePoint Admin",
+        "url": "https://admin.microsoft.com/sharepoint",
+        "folder": "Microsoft 365 Admin"
+      },
+      {
+        "id": "210",
+        "name": "Teams Admin",
+        "url": "https://admin.teams.microsoft.com",
+        "folder": "Microsoft 365 Admin"
+      },
+      {
+        "id": "211",
+        "name": "Exchange Admin",
+        "url": "https://admin.cloud.microsoft/exchange",
+        "folder": "Microsoft 365 Admin"
+      }
+    ]
+  },
     {
+    "id": "azure-admin",
+    "name": "Azure Admin Portals",
+    "description": "Key administrative portals for managing Azure services",
+    "bookmarks": [
+      {
+        "id": "401",
+        "name": "Azure Portal",
+        "url": "https://portal.azure.com/",
+        "folder": "Azure"
+      },
+      {
+        "id": "402",
+        "name": "Azure AI Foundry",
+        "url": "https://ai.azure.com/",
+        "folder": "Azure"
+      },
+      {
+        "id": "403",
+        "name": "Azure OpenAI Studio",
+        "url": "https://oai.azure.com/",
+        "folder": "Azure"
+      },
+      {
+        "id": "404",
+        "name": "Microsoft Entra",
+        "url": "https://entra.microsoft.com/",
+        "folder": "Azure"
+      },
+      {
+        "id": "405",
+        "name": "Microsoft 365 Admin Center",
+        "url": "https://admin.microsoft.com",
+        "folder": "Azure"
+      }
+    ]
+  },
+  {
     "id": "pnp-essentials",
     "name": "Microsoft 365 Community & Power Platform",
     "description": "Links to M365 Community Sites and GitHub Repositories for Microsoft 365 Community",
     "bookmarks": [
-      { "id": "51", "name": "M365 Community Site", "url": "https://pnp.github.io", "folder": "M365 Community Sites" },
-      { "id": "52", "name": "PnP Script Samples", "url": "https://pnp.github.io/script-samples/", "folder": "M365 Community Sites" },
-      { "id": "53", "name": "PnP SPFx Web Parts", "url": "https://github.com/pnp/sp-dev-fx-webparts", "folder": "M365 Community Sites" },
-      { "id": "54", "name": "PnP Js", "url":"https://github.com/pnp/pnpjs", "folder": "M365 Community Sites" },
-      { "id": "55", "name": "PnP Community Blog", "url":"https://pnp.github.io/blog", "folder": "M365 Community Sites" },
-      { "id": "56", "name": "CLI for Microsoft 365", "url":"https://aka.ms/cli-m365", "folder": "M365 Community Sites" },
-      { "id": "57", "name": "PnP Framework", "url":"https://pnp.github.io/pnpframework/", "folder": "M365 Community Sites" },
-      { "id": "58", "name": "PnP Core SDK", "url":"https://aka.ms/pnp/coresdk/docs", "folder": "M365 Community Sites" },
-      { "id": "59", "name": "PnP PowerShell", "url":"https://pnp.github.io/powershell/", "folder": "M365 Community Sites" },
+      {
+        "id": "300",
+        "name": "M365 Community Site",
+        "url": "https://pnp.github.io",
+        "folder": "M365 Community Sites"
+      },
+      {
+        "id": "302",
+        "name": "PnP Script Samples",
+        "url": "https://pnp.github.io/script-samples/",
+        "folder": "M365 Community Sites"
+      },
+      {
+        "id": "303",
+        "name": "PnP SPFx Web Parts",
+        "url": "https://github.com/pnp/sp-dev-fx-webparts",
+        "folder": "M365 Community Sites"
+      },
+      {
+        "id": "304",
+        "name": "PnP Js",
+        "url": "https://github.com/pnp/pnpjs",
+        "folder": "M365 Community Sites"
+      },
+      {
+        "id": "305",
+        "name": "PnP Community Blog",
+        "url": "https://pnp.github.io/blog",
+        "folder": "M365 Community Sites"
+      },
+      {
+        "id": "306",
+        "name": "CLI for Microsoft 365",
+        "url": "https://aka.ms/cli-m365",
+        "folder": "M365 Community Sites"
+      },
+      {
+        "id": "307",
+        "name": "PnP Framework",
+        "url": "https://pnp.github.io/pnpframework/",
+        "folder": "M365 Community Sites"
+      },
+      {
+        "id": "308",
+        "name": "PnP Core SDK",
+        "url": "https://aka.ms/pnp/coresdk/docs",
+        "folder": "M365 Community Sites"
+      },
+      {
+        "id": "309",
+        "name": "PnP PowerShell",
+        "url": "https://pnp.github.io/powershell/",
+        "folder": "M365 Community Sites"
+      },
+      {
+        "id": "311",
+        "name": "PnP PowerShell",
+        "url": "https://github.com/pnp/powershell",
+        "folder": "M365 Community GitHub Repos"
+      },
+      {
+        "id": "312",
+        "name": "PnP Modern Search",
+        "url": "https://github.com/pnp/search",
+        "folder": "M365 Community GitHub Repos"
+      },
+      {
+        "id": "313",
+        "name": "PnP Reusable Controls",
+        "url": "https://github.com/pnp/spfx-controls-react",
+        "folder": "M365 Community GitHub Repos"
+      },
+      {
+        "id": "314",
+        "name": "PnP SPFx Web Parts",
+        "url": "https://github.com/pnp/sp-dev-fx-webparts",
+        "folder": "M365 Community GitHub Repos"
+      },
+      {
+        "id": "315",
+        "name": "PnP Copilot Prompts",
+        "url": "https://github.com/pnp/copilot-prompts",
+        "folder": "M365 Community GitHub Repos"
+      },
+      {
+        "id": "316",
+        "name": "PnP Copilot Pro Dev Samples",
+        "url": "https://github.com/pnp/copilot-pro-dev-samples",
+        "folder": "M365 Community GitHub Repos"
+      },
+      {
+        "id": "317",
+        "name": "PnP Framework",
+        "url": "https://github.com/pnp/pnpframework",
+        "folder": "M365 Community GitHub Repos"
+      },
+      {
+        "id": "318",
+        "name": "PnP Core SDK",
+        "url": "https://github.com/pnp/pnpcore",
+        "folder": "M365 Community GitHub Repos"
+      },
+      {
+        "id": "319",
+        "name": "All GitHub PnP Repositories",
+        "url": "https://github.com/orgs/pnp/repositories?type=all",
+        "folder": "M365 Community GitHub Repos"
+      }
+    ]
+  },
+  {
+    "id": "m365-developer-essentials",
+    "name": "Microsoft 365 Developer Resources",
+    "description": "Links to Microsoft 365 Development Resources for Microsoft 365 Community",
+    "bookmarks": [
+      {
+        "id": "500",
+        "name": "All GitHub PnP Repositories",
+        "url": "https://github.com/orgs/pnp/repositories?type=all",
+        "folder": "Developer Samples"
+      },
+      
+      {
+        "id": "501",
+        "name": "MIcrosoft Solution Sample Gallery",
+        "url": "https://adoption.microsoft.com/en-us/sample-solution-gallery/",
+        "folder": "Developer Samples"
+      },
+      
+      {
+        "id": "522",
+        "name": "Microsoft Graph Documentation",
+        "url": "https://learn.microsoft.com/en-us/graph/",
+        "folder": "Developer Docs"
+      },
+      {
+        "id": "523",
+        "name": "Azure Open AI Models Documentation",
+        "url": "https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/models?WT.mc_id=M365-MVP-5003816",
+        "folder": "Developer Docs"
+      },
+      {
+        "id": "524",
+        "name": "Azure Open AI Models Documentation",
+        "url": "https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/models?WT.mc_id=M365-MVP-5003816",
+        "folder": "Developer Docs"
+      },
+      {
+        "id": "525",
+        "name": "Microsoft 365 Copilot extensibility",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/?WT.mc_id=M365-MVP-5003816",
+        "folder": "Developer Docs"
+      },
+      {
+        "id": "526",
+        "name": "Copilot Studio Documentation",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/fundamentals-what-is-copilot-studio?WT.mc_id=M365-MVP-5003816",
+        "folder": "Developer Docs"
+      },
+      {
+        "id": "527",
+        "name": "Semantic Kernel",
+        "url": "https://learn.microsoft.com/en-us/semantic-kernel/overview/?WT.mc_id=M365-MVP-5003816",
+        "folder": "Developer Docs"
+      },
+      {
+        "id": "528",
+        "name": "Agents SDK Documentation",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/agents-sdk/?WT.mc_id=M365-MVP-5003816",
+        "folder": "Developer Docs"
+      },
+      {
+        "id": "530",
+        "name": "SharePoint Development",
+        "url": "https://learn.microsoft.com/en-us/sharepoint/dev/general-development/sharepoint-development-overview?WT.mc_id=M365-MVP-5003816",
+        "folder": "Developer Docs"
+      },
+      {
+        "id": "531",
+        "name": "Teams Development Docs",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/platform/mstdd-landing?WT.mc_id=M365-MVP-5003816",
+        "folder": "Developer Docs"
+      },
+      {
+        "id": "532",
+        "name": "Agents SDK Documentation",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/agents-sdk/?WT.mc_id=M365-MVP-5003816",
+        "folder": "Developer Docs"
+      },
+      
+      {
+        "id": "533",
+        "name": "Copilot Studio Docs",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/?WT.mc_id=M365-MVP-5003816",
+        "folder": "Developer Docs"
+      },
+      {
+        "id": "534",
+        "name": "TypeSpec Docs",
+        "url": "https://typespec.io/",
+        "folder": "Developer Docs"
+      },
+      {
+        "id": "535",
+        "name": "Microsoft Learn - Training",
+        "url": "https://learn.microsoft.com/en-us/training/browse/",
+        "folder": "Developer Docs"
+      },
+      {
+        "id": "536",
+        "name": "NuGet",
+        "url": "https://www.nuget.org/",
+        "folder": "Developer Docs"
+      },
+      {
+        "id": "537",
+        "name": "NPM",
+        "url": "https://www.npmjs.com/",
+        "folder": "Developer Docs"
+      },
+      {
+        "id": "538",
+        "name": "PowerShell Gallery",
+        "url": "https://www.powershellgallery.com/",
+        "folder": "Developer Docs"
+      },
 
-      { "id": "61", "name": "PnP PowerShell", "url": "https://github.com/pnp/powershell", "folder": "M365 Community GitHub Repos" },
-      { "id": "62", "name": "PnP Modern Search", "url": "https://github.com/pnp/search", "folder": "M365 Community GitHub Repos" },
-      { "id": "63", "name": "PnP Reusable Controls", "url": "https://github.com/pnp/spfx-controls-react", "folder": "M365 Community GitHub Repos" },
-      { "id": "64", "name": "PnP SPFx Web Parts", "url": "https://github.com/pnp/sp-dev-fx-webparts", "folder": "M365 Community GitHub Repos" },
-      { "id": "65", "name": "PnP Copilot Prompts", "url":"https://github.com/pnp/copilot-prompts", "folder": "M365 Community GitHub Repos" },
-      { "id": "66", "name": "PnP Copilot Pro Dev Samples", "url":"https://github.com/pnp/copilot-pro-dev-samples", "folder": "M365 Community GitHub Repos" },
-      { "id": "67", "name": "PnP Framework", "url":"https://github.com/pnp/pnpframework", "folder": "M365 Community GitHub Repos" },
-      { "id": "68", "name": "PnP Core SDK", "url":"https://github.com/pnp/pnpcore", "folder": "M365 Community GitHub Repos" },
-      { "id": "69", "name": "All GitHub PnP Repositories", "url":"https://github.com/orgs/pnp/repositories?type=all", "folder": "M365 Community GitHub Repos" }
 
+       {
+        "id": "540",
+        "name": "GitHub",
+        "url": "https://github.com/",
+        "folder": "Developer Tools"
+      },
+      {
+        "id": "541",
+        "name": "Microsoft Graph Explorer",
+        "url": "https://developer.microsoft.com/en-us/graph/graph-explorer",
+        "folder": "Developer Tools"
+      },
+      {
+        "id": "543",
+        "name": "Postman (Login)",
+        "url": "https://identity.getpostman.com/login?continue=https%3A%2F%2Fgo.postman.co%2Fhome&_uuid=f0e24556-a1a5-43df-bb7b-87db25060059",
+        "folder": "Developer Tools"
+      },
+      {
+        "id": "544",
+        "name": "Postman (Microsoft Graph Collection)",
+        "url": "https://www.postman.com/microsoftgraph/microsoft-graph/overview",
+        "folder": "Developer Tools"
+      },
+      {
+        "id": "545",
+        "name": "JSON Web Token (JWT) Debugger",
+        "url": "https://www.jwt.io/",
+        "folder": "Developer Tools"
+      },
+      {
+        "id": "545",
+        "name": "Base64 Encode/Decode",
+        "url": "https://www.base64converter.org/",
+        "folder": "Developer Tools"
+      },
+      {
+        "id": "546",
+        "name": "Adaptive Cards",
+        "url": "https://adaptivecards.microsoft.com/",
+        "folder": "Developer Tools"
+      },
+      {
+        "id": "547",
+        "name": "DevProxy",
+        "url": "https://learn.microsoft.com/en-us/microsoft-cloud/dev/dev-proxy/get-started/set-up?tabs=automated&pivots=client-operating-system-windows&WT.mc_id=M365-MVP-5003816",
+        "folder": "Developer Tools"
+      }
     ]
   }
 ]
