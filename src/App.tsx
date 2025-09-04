@@ -29,7 +29,7 @@ function App() {
               <div className="flex items-center justify-between mb-6">
                 <div className="flex-1" />
                 <div className="flex items-center justify-center gap-3">
-                  <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center shadow-lg">
+                  <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center shadow-lg hidden sm:flex">
                     <FileText size={24} className="text-primary-foreground" />
                   </div>
                   <h1 className="text-4xl font-light text-foreground">
