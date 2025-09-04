@@ -1,0 +1,40 @@
+{
+  "icons": [
+    {
+      "id": "microsoft-365",
+      "name": "Microsoft 365",
+      "base64Data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJYSURBVFhH7ZbNSwJhEMafF/+A/gAP3jp48OLJgwcPnjx48uTBgydPnjx58uTBgyc/wIMHL148ePDkwYMnTx48ePLgwYMnD548ePDkwYMHL168eA==",
+      "description": "Microsoft 365 suite icon"
+    },
+    {
+      "id": "sharepoint",
+      "name": "SharePoint",
+      "base64Data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKBSURBVFhH7ZbLSwJhFMWfF/+A3rx58+bNmzdv3rx58+bNmzdv3rx58+bNm7dvXrx58+LFixen3rx58+bNmzdv3rx58+LFmzdvXrx48eLFmzdvnjx58uTJkycfnvz4",
+      "description": "SharePoint collaboration platform icon"
+    },
+    {
+      "id": "teams", 
+      "name": "Microsoft Teams",
+      "base64Data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJ5SURBVFhH7ZfLSwJhFMWfF/+A3rx58+bNmzdv3rx58+bNmzdv3rx58+bNm7dvXrx58+LFixen3rx58+bNmzdv3rx58+LFmzdvXrx48eLFmzdvnjx58uTJkycfnvz4cOLFixcvXrx48eLFixcvXrx48eLFixcvXrx48eLFixcvXrx48eLF",
+      "description": "Microsoft Teams communication platform icon"
+    },
+    {
+      "id": "azure",
+      "name": "Microsoft Azure", 
+      "base64Data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKDSURBVFhH7ZfPSwJhFMSfF/+A3rx58+bNmzdv3rx58+bNmzdv3rx58+bNm7dvXrx58+LFixen3rx58+bNmzdv3rx58+LFmzdvXrx48eLFmzdvnjx58uTJkycfnvz4cOLFixcvXrx48eLFixcvXrx48eLFixcvXrx48eLFixcvXrx48eLFi4ePDx8+fPjw4cOHDx8+fPjw4cOHDx8+fPjw4cOHDx8+fPjw4cOHDx8+fPjw8fHhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDx8eHDhw8fPnz48OHDhw8fPnz48OHDhw8fPnz48OHDhw8fPnz48OHj48PHx4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PD",
+      "description": "Microsoft Azure cloud platform icon"
+    },
+    {
+      "id": "github",
+      "name": "GitHub",
+      "base64Data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJmSURBVFhH7ZbLSwJhFMWfF/+A3rx58+bNmzdv3rx58+bNmzdv3rx58+bNm7dvXrx58+LFixen3rx58+bNmzdv3rx58+LFmzdvXrx48eLFmzdvnjx58uTJkycfnvz4cOLFixcvXrx48eLFixcvXrx48eLFixcvXrx48eLFi4ePDx8+fPjw4cOHDx8+fPjw4cOHDx8+fPjw4cOHDx8+fPjw4cOHDx8+fPjw8fHhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDx8eHDhw8fPnz48OHDhw8fPnz48OHDhw8fPnz48OHDhw8fPnz48OHj48PHx4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDx8fHhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+Pj48PHx4cOHDx8+fPjw4cOHDx8+fPjw4cOHDx8+fPjw4cOHDx8+fPjw4ePjw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+Pj",
+      "description": "GitHub repository hosting platform icon"
+    },
+    {
+      "id": "office",
+      "name": "Microsoft Office",
+      "base64Data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJ8SURBVFhH7ZfLSwJhFMWfF/+A3rx58+bNmzdv3rx58+bNmzdv3rx58+bNm7dvXrx58+LFixen3rx58+bNmzdv3rx58+LFmzdvXrx48eLFmzdvnjx58uTJkycfnvz4cOLFixcvXrx48eLFixcvXrx48eLFixcvXrx48eLFi4ePDx8+fPjw4cOHDx8+fPjw4cOHDx8+fPjw4cOHDx8+fPjw4cOHDx8+fPjw8fHhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDx8eHDhw8fPnz48OHDhw8fPnz48OHDhw8fPnz48OHDhw8fPnz48OHj48PHx4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDx8fHhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+Pj48PHx4cOHDx8+fPjw4cOHDx8+fPjw4cOHDx8+fPjw4cOHDx8+fPjw4ePjw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+Pj48PHx4cOHDx8+fPjw4cOHDx8+fPjw4cOHDx8+fPjw4cOHDx8+fPjw8fHx4cOHDx8+fPjw4cOHDx8+fPjw4cOHDx8+fPjw4cOHDx8+fPjw8fHh48OHDx8+fPjw4cOHDx8+fPjw4cOHDx8+fPjw4cOHDx8+fPjw8eHjw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+Pj48PHhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58fPj48OHDhw8fPnz48OHDhw8fPnz48OHDhw8fPnz48OHDhw8fPjx8+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+Pj",
+      "description": "Microsoft Office productivity suite icon"
+    }
+  ]
+}
