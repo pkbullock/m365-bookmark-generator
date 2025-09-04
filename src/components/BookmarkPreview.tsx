@@ -122,7 +122,7 @@ export function BookmarkPreview({ bookmarks, groupName }: BookmarkPreviewProps) 
             </CardContent>
           </Card>
 
-          <div className="bg-gradient-to-br from-primary/5 via-primary/3 to-accent/5 border border-primary/20 rounded-xl p-8 shadow-sm">
+          <div className="bg-gradient-to-br from-primary/5 via-primary/3 to-accent/5 border border-primary/20 rounded-xl p-8 shadow-sm min-w-0">
             <div className="flex items-center gap-4 mb-6">
               <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center shadow-sm">
                 <GlobeIcon size={24} className="text-primary" />
@@ -153,8 +153,8 @@ export function BookmarkPreview({ bookmarks, groupName }: BookmarkPreviewProps) 
                     {folderBookmarks.map((bookmark) => (
                       <div key={bookmark.id} className="flex items-center gap-3 text-sm p-2 bg-card/50 rounded-lg border border-border/30">
                         <div className="w-1.5 h-1.5 bg-primary rounded-full flex-shrink-0" />
-                        <span className="text-foreground font-medium">{bookmark.name}</span>
-                        <span className="text-muted-foreground text-xs truncate font-mono bg-fluent-neutral-20 px-2 py-1 rounded flex-1">
+                        <span className="text-foreground truncate font-medium">{bookmark.name}</span>
+                        <span className="text-muted-foreground text-xs font-mono bg-fluent-neutral-20 px-2 py-1 rounded flex-1 break-all truncate">
                           {bookmark.url}
                         </span>
                       </div>
