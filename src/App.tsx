@@ -9,7 +9,7 @@ import { Footer } from '@/components/Footer';
 import { ThemeProvider } from '@/contexts/ThemeContext';
 import { type Bookmark, type BookmarkTemplate } from '@/lib/bookmarks';
 import { Toaster } from '@/components/ui/sonner';
-import { FileText, Gear, Eye } from '@phosphor-icons/react';
+import { FileTextIcon, GearIcon, EyeIcon } from '@phosphor-icons/react';
 
 function App() {
   const [selectedTemplate, setSelectedTemplate] = useState<BookmarkTemplate | null>(null);
@@ -30,7 +30,7 @@ function App() {
                 <div className="flex-1" />
                 <div className="flex items-center justify-center gap-3">
                   <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center shadow-lg hidden sm:flex">
-                    <FileText size={24} className="text-primary-foreground" />
+                    <FileTextIcon size={24} className="text-primary-foreground" />
                   </div>
                   <h1 className="text-4xl font-light text-foreground">
                     Microsoft 365 Bookmarks Generator
@@ -55,7 +55,7 @@ function App() {
               <CardHeader className="pb-4">
                 <CardTitle className="flex items-center gap-3 text-xl font-medium">
                   <div className="w-8 h-8 bg-primary/10 rounded-md flex items-center justify-center">
-                    <FileText size={18} className="text-primary" />
+                    <FileTextIcon size={18} className="text-primary" />
                   </div>
                   Quick Start Guide
                 </CardTitle>
@@ -102,15 +102,15 @@ function App() {
             <Tabs defaultValue="templates" className="space-y-8">
               <TabsList className="w-full max-w-md mx-auto grid grid-cols-3 bg-fluent-neutral-10 border border-border">
                 <TabsTrigger value="templates" className="flex items-center gap-2 data-[state=active]:bg-card data-[state=active]:shadow-sm">
-                  <FileText size={16} />
+                  <FileTextIcon size={16} />
                   Templates
                 </TabsTrigger>
                 <TabsTrigger value="manage" className="flex items-center gap-2 data-[state=active]:bg-card data-[state=active]:shadow-sm">
-                  <Gear size={16} />
+                  <GearIcon size={16} />
                   Manage
                 </TabsTrigger>
                 <TabsTrigger value="preview" className="flex items-center gap-2 data-[state=active]:bg-card data-[state=active]:shadow-sm">
-                  <Eye size={16} />
+                  <EyeIcon size={16} />
                   Preview
                 </TabsTrigger>
               </TabsList>
