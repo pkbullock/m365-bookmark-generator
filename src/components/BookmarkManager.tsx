@@ -213,7 +213,7 @@ export function BookmarkManager({ bookmarks, onBookmarksChange }: BookmarkManage
                   <FolderOpenIcon size={18} className="text-accent" />
                 </div>
                 <span>{folder}</span>
-                <div className="px-2 py-1 bg-fluent-neutral-20 rounded-full">
+                <div className="w-7 h-7 flex items-center justify-center bg-fluent-neutral-20 rounded-full">
                   <span className="text-xs font-medium text-muted-foreground">
                     {folderBookmarks.length}
                   </span>
