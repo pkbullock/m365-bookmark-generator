@@ -1,8 +1,6 @@
 export interface Icon {
   id: string;
-  name: string;
   base64Data: string;
-  description?: string;
 }
 
 export interface IconRepository {
