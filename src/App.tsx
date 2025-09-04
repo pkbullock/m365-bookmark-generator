@@ -33,7 +33,7 @@ function App() {
                     <FileTextIcon size={24} className="text-primary-foreground" />
                   </div>
                   <h1 className="text-4xl font-light text-foreground">
-                    Microsoft 365 Bookmarks Generator
+                    Microsoft 365 Bookmarks
                   </h1>
                 </div>
                 <div className="flex-1 flex justify-end items-center gap-2">
