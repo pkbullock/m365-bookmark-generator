@@ -98,153 +98,6 @@
     ]
   },
   {
-    "id": "end-user-essentials",
-    "name": "Microsoft 365 Personal - End User Essentials",
-    "description": "Commonly used Microsoft 365 services for end users",
-    "bookmarks": [
-      {
-        "id": "100",
-        "name": "Outlook",
-        "url": "https://outlook.office.com/",
-        "folder": "Personal Apps",
-        "iconId": "outlook"
-      },
-      {
-        "id": "101",
-        "name": "OneDrive",
-        "url": "https://onedrive.live.com/",
-        "folder": "Personal Apps",
-        "iconId": "microsoft"
-      },
-      {
-        "id": "103",
-        "name": "Excel Online",
-        "url": "https://office.live.com/start/Excel.aspx",
-        "folder": "Personal Apps",
-        "iconId": "excel"
-      },
-      {
-        "id": "104",
-        "name": "OneNote",
-        "url": "https://www.onenote.com/",
-        "folder": "Personal Apps",
-        "iconId": "copilot"
-      }
-    ]
-  },
-  {
-    "id": "administrative",
-    "name": "Microsoft 365 Admin",
-    "description": "Key administrative portals for managing Microsoft 365 services",
-    "bookmarks": [
-      {
-        "id": "200",
-        "name": "Microsoft 365 Admin Center",
-        "url": "https://admin.microsoft.com",
-        "folder": "Microsoft 365 Admin",
-        "iconId": "microsoft"
-      },
-      {
-        "id": "201",
-        "name": "Microsoft Purview",
-        "url": "https://purview.microsoft.com/",
-        "folder": "Microsoft 365 Admin",
-        "iconId": "microsoft"
-      },
-      {
-        "id": "205",
-        "name": "Microsoft Entra",
-        "url": "https://entra.microsoft.com/",
-        "folder": "Azure",
-        "iconId": "entra"
-      },
-      {
-        "id": "206",
-        "name": "Power Platform Admin Center",
-        "url": "https://admin.powerplatform.microsoft.com/",
-        "folder": "Microsoft 365 Admin",
-        "iconId": "microsoft"
-      },
-      {
-        "id": "207",
-        "name": "Microsoft Priva",
-        "url": "https://purview.microsoft.com/priva/home",
-        "folder": "Microsoft 365 Admin",
-        "iconId": "priva"
-      },
-      {
-        "id": "208",
-        "name": "Cloud Policy Service",
-        "url": "https://config.office.com/officeSettings/officePolicies",
-        "folder": "Microsoft 365 Admin",
-        "iconId": "cloud-policy"
-      },
-      {
-        "id": "209",
-        "name": "SharePoint Admin",
-        "url": "https://admin.microsoft.com/sharepoint",
-        "folder": "Microsoft 365 Admin",
-        "iconId": "sharepoint"
-      },
-      {
-        "id": "210",
-        "name": "Teams Admin",
-        "url": "https://admin.teams.microsoft.com",
-        "folder": "Microsoft 365 Admin",
-        "iconId": "teams"
-      },
-      {
-        "id": "211",
-        "name": "Exchange Admin",
-        "url": "https://admin.cloud.microsoft/exchange",
-        "folder": "Microsoft 365 Admin",
-        "iconId": "exchange-admin"
-      }
-    ]
-  },
-    {
-    "id": "azure-admin",
-    "name": "Azure Admin Portals",
-    "description": "Key administrative portals for managing Azure services",
-    "bookmarks": [
-      {
-        "id": "401",
-        "name": "Azure Portal",
-        "url": "https://portal.azure.com/",
-        "folder": "Azure",
-        "iconId": "azure"
-      },
-      {
-        "id": "402",
-        "name": "Azure AI Foundry",
-        "url": "https://ai.azure.com/",
-        "folder": "Azure",
-        "iconId": "aifoundry"
-      },
-      {
-        "id": "403",
-        "name": "Azure OpenAI Studio",
-        "url": "https://oai.azure.com/",
-        "folder": "Azure",
-        "iconId": "aifoundry"
-      },
-      {
-        "id": "404",
-        "name": "Microsoft Entra",
-        "url": "https://entra.microsoft.com/",
-        "folder": "Azure",
-        "iconId": "entra"
-      },
-      {
-        "id": "405",
-        "name": "Microsoft 365 Admin Center",
-        "url": "https://admin.microsoft.com",
-        "folder": "Azure",
-        "iconId": "m365-admin"
-      }
-    ]
-  },
-  {
     "id": "pnp-essentials",
     "name": "Microsoft 365 Community & Power Platform",
     "description": "Links to M365 Community Sites and GitHub Repositories for Microsoft 365 Community",
@@ -377,6 +230,119 @@
       }
     ]
   },
+  {
+    "id": "administrative",
+    "name": "Microsoft 365 Admin",
+    "description": "Key administrative portals for managing Microsoft 365 services",
+    "bookmarks": [
+      {
+        "id": "200",
+        "name": "Microsoft 365 Admin Center",
+        "url": "https://admin.microsoft.com",
+        "folder": "Microsoft 365 Admin",
+        "iconId": "microsoft"
+      },
+      {
+        "id": "201",
+        "name": "Microsoft Purview",
+        "url": "https://purview.microsoft.com/",
+        "folder": "Microsoft 365 Admin",
+        "iconId": "microsoft"
+      },
+      {
+        "id": "205",
+        "name": "Microsoft Entra",
+        "url": "https://entra.microsoft.com/",
+        "folder": "Azure",
+        "iconId": "entra"
+      },
+      {
+        "id": "206",
+        "name": "Power Platform Admin Center",
+        "url": "https://admin.powerplatform.microsoft.com/",
+        "folder": "Microsoft 365 Admin",
+        "iconId": "microsoft"
+      },
+      {
+        "id": "207",
+        "name": "Microsoft Priva",
+        "url": "https://purview.microsoft.com/priva/home",
+        "folder": "Microsoft 365 Admin",
+        "iconId": "priva"
+      },
+      {
+        "id": "208",
+        "name": "Cloud Policy Service",
+        "url": "https://config.office.com/officeSettings/officePolicies",
+        "folder": "Microsoft 365 Admin",
+        "iconId": "cloud-policy"
+      },
+      {
+        "id": "209",
+        "name": "SharePoint Admin",
+        "url": "https://admin.microsoft.com/sharepoint",
+        "folder": "Microsoft 365 Admin",
+        "iconId": "sharepoint"
+      },
+      {
+        "id": "210",
+        "name": "Teams Admin",
+        "url": "https://admin.teams.microsoft.com",
+        "folder": "Microsoft 365 Admin",
+        "iconId": "teams"
+      },
+      {
+        "id": "211",
+        "name": "Exchange Admin",
+        "url": "https://admin.cloud.microsoft/exchange",
+        "folder": "Microsoft 365 Admin",
+        "iconId": "exchange-admin"
+      }
+    ]
+  },
+    {
+    "id": "azure-admin",
+    "name": "Azure Admin Portals",
+    "description": "Key administrative portals for managing Azure services",
+    "bookmarks": [
+      {
+        "id": "401",
+        "name": "Azure Portal",
+        "url": "https://portal.azure.com/",
+        "folder": "Azure",
+        "iconId": "azure"
+      },
+      {
+        "id": "402",
+        "name": "Azure AI Foundry",
+        "url": "https://ai.azure.com/",
+        "folder": "Azure",
+        "iconId": "aifoundry"
+      },
+      {
+        "id": "403",
+        "name": "Azure OpenAI Studio",
+        "url": "https://oai.azure.com/",
+        "folder": "Azure",
+        "iconId": "aifoundry"
+      },
+      {
+        "id": "404",
+        "name": "Microsoft Entra",
+        "url": "https://entra.microsoft.com/",
+        "folder": "Azure",
+        "iconId": "entra"
+      },
+      {
+        "id": "405",
+        "name": "Microsoft 365 Admin Center",
+        "url": "https://admin.microsoft.com",
+        "folder": "Azure",
+        "iconId": "m365-admin"
+      }
+    ]
+  },
+  
   {
         "id":"microsoft-developer-samples",
         "name": "Microsoft Developer Samples",
