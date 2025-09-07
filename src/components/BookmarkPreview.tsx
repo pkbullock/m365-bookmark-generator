@@ -1,12 +1,12 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { FolderIcon, GlobeIcon, DownloadIcon, EyeIcon, FileTextIcon } from '@phosphor-icons/react';
-import { type Bookmark, downloadBookmarkFile } from '@/lib/bookmarks';
+import { type Bookmark, type BookmarkTemplate, downloadBookmarkFile } from '@/lib/bookmarks';
 import { toast } from 'sonner';
 
 interface BookmarkPreviewProps {
   bookmarks: Bookmark[];
-  groupName?: string;
+  selectedTemplates?: BookmarkTemplate[];
 }
 
 function formatFileName(name: string) {
@@ -17,7 +17,7 @@ function formatFileName(name: string) {
     + '.html';
 }
 
-export function BookmarkPreview({ bookmarks, groupName }: BookmarkPreviewProps) {
+export function BookmarkPreview({ bookmarks, selectedTemplates = [] }: BookmarkPreviewProps) {
   const groupedBookmarks = bookmarks.reduce((acc, bookmark) => {
     const folder = bookmark.folder || 'Uncategorized';
     if (!acc[folder]) acc[folder] = [];
@@ -32,8 +32,15 @@ export function BookmarkPreview({ bookmarks, groupName }: BookmarkPreviewProps) 
     }
 
     try {
-      //downloadBookmarkFile(bookmarks, 'microsoft-365-bookmarks.html');
-      const fileName = formatFileName(groupName || 'microsoft-365-bookmarks');
+      let fileName: string;
+      if (selectedTemplates.length > 1) {
+        fileName = 'import-multiple-bookmarks.html';
+      } else if (selectedTemplates.length === 1) {
+        fileName = formatFileName(selectedTemplates[0].name);
+      } else {
+        fileName = 'microsoft-365-bookmarks.html';
+      }
+      
       downloadBookmarkFile(bookmarks, fileName);
       toast.success('Bookmark file downloaded successfully!');
     } catch (error) {
@@ -131,6 +138,9 @@ export function BookmarkPreview({ bookmarks, groupName }: BookmarkPreviewProps) 
                 <h3 className="text-xl font-medium">Microsoft 365 Bookmarks</h3>
                 <p className="text-sm text-muted-foreground font-light">
                   {bookmarks.length} bookmarks organized in {Object.keys(groupedBookmarks).length} folders
+                  {selectedTemplates.length > 0 && (
+                    <span> • From {selectedTemplates.length} template{selectedTemplates.length > 1 ? 's' : ''}</span>
+                  )}
                 </p>
               </div>
             </div>

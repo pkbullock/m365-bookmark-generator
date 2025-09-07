@@ -12,12 +12,25 @@ import { Toaster } from '@/components/ui/sonner';
 import { FileTextIcon, GearIcon, EyeIcon } from '@phosphor-icons/react';
 
 function App() {
-  const [selectedTemplate, setSelectedTemplate] = useState<BookmarkTemplate | null>(null);
+  const [selectedTemplates, setSelectedTemplates] = useState<BookmarkTemplate[]>([]);
   const [bookmarks, setBookmarks] = useState<Bookmark[]>([]);
 
-  const handleTemplateSelect = (template: BookmarkTemplate) => {
-    setSelectedTemplate(template);
-    setBookmarks(template.bookmarks);
+  const handleTemplateSelect = (template: BookmarkTemplate, isSelected: boolean) => {
+    if (isSelected) {
+      // Add template to selection
+      const newSelectedTemplates = [...selectedTemplates, template];
+      setSelectedTemplates(newSelectedTemplates);
+      // Combine bookmarks from all selected templates
+      const combinedBookmarks = newSelectedTemplates.flatMap(t => t.bookmarks);
+      setBookmarks(combinedBookmarks);
+    } else {
+      // Remove template from selection
+      const newSelectedTemplates = selectedTemplates.filter(t => t.id !== template.id);
+      setSelectedTemplates(newSelectedTemplates);
+      // Combine bookmarks from remaining selected templates
+      const combinedBookmarks = newSelectedTemplates.flatMap(t => t.bookmarks);
+      setBookmarks(combinedBookmarks);
+    }
   };
 
   return (
@@ -117,7 +130,7 @@ function App() {
 
               <TabsContent value="templates" className="space-y-6">
                 <TemplateSelect
-                  selectedTemplate={selectedTemplate}
+                  selectedTemplates={selectedTemplates}
                   onTemplateSelect={handleTemplateSelect}
                 />
               </TabsContent>
@@ -130,7 +143,7 @@ function App() {
               </TabsContent>
 
               <TabsContent value="preview" className="space-y-6">
-                <BookmarkPreview bookmarks={bookmarks} groupName={selectedTemplate?.name} />
+                <BookmarkPreview bookmarks={bookmarks} selectedTemplates={selectedTemplates} />
               </TabsContent>
             </Tabs>
           </div>
