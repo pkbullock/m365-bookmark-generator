@@ -6,11 +6,11 @@ import { loadTemplates } from '@/lib/templateService';
 import { Check, Sparkle } from '@phosphor-icons/react';
 
 interface TemplateSelectProps {
-  selectedTemplate: BookmarkTemplate | null;
-  onTemplateSelect: (template: BookmarkTemplate) => void;
+  selectedTemplates: BookmarkTemplate[];
+  onTemplateSelect: (template: BookmarkTemplate, isSelected: boolean) => void;
 }
 
-export function TemplateSelect({ selectedTemplate, onTemplateSelect }: TemplateSelectProps) {
+export function TemplateSelect({ selectedTemplates, onTemplateSelect }: TemplateSelectProps) {
   const [templates, setTemplates] = useState<BookmarkTemplate[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -57,42 +57,49 @@ export function TemplateSelect({ selectedTemplate, onTemplateSelect }: TemplateS
           <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
             <Sparkle size={20} className="text-primary" />
           </div>
-          <h2 className="text-2xl font-light text-foreground">Choose a Template</h2>
+          <h2 className="text-2xl font-light text-foreground">Choose Templates</h2>
         </div>
         <p className="text-muted-foreground font-light max-w-lg mx-auto leading-relaxed">
-          Select a predefined Microsoft 365 bookmark collection to get started with your productivity setup
+          Select one or more Microsoft 365 bookmark collections to combine and get started with your productivity setup
         </p>
       </div>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {templates.map((template) => (
-          <Card 
-            key={template.id}
-            className={`cursor-pointer transition-all duration-300 hover:shadow-lg hover:-translate-y-1 border shadow-sm ${
-              selectedTemplate?.id === template.id 
-                ? 'ring-2 ring-primary shadow-lg bg-gradient-to-br from-card to-primary/5' 
-                : 'hover:shadow-md'
-            }`}
-            onClick={() => onTemplateSelect(template)}
-          >
-            <CardHeader className="pb-3">
-              <div className="flex items-start justify-between">
-                <div className="flex-1">
-                  <CardTitle className="text-lg font-medium text-foreground flex items-center gap-2">
-                    <div className="w-2 h-2 bg-primary rounded-full" />
-                    {template.name}
-                  </CardTitle>
-                  <CardDescription className="mt-2 font-light leading-relaxed">
-                    {template.description}
-                  </CardDescription>
-                </div>
-                {selectedTemplate?.id === template.id && (
-                  <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center ml-3">
-                    <Check size={14} className="text-primary-foreground" />
+        {templates.map((template) => {
+          const isSelected = selectedTemplates.some(t => t.id === template.id);
+          
+          return (
+            <Card 
+              key={template.id}
+              className={`cursor-pointer transition-all duration-300 hover:shadow-lg hover:-translate-y-1 border shadow-sm ${
+                isSelected 
+                  ? 'ring-2 ring-primary shadow-lg bg-gradient-to-br from-card to-primary/5' 
+                  : 'hover:shadow-md'
+              }`}
+              onClick={() => onTemplateSelect(template, !isSelected)}
+            >
+              <CardHeader className="pb-3">
+                <div className="flex items-start justify-between">
+                  <div className="flex-1">
+                    <CardTitle className="text-lg font-medium text-foreground flex items-center gap-2">
+                      <div className="w-2 h-2 bg-primary rounded-full" />
+                      {template.name}
+                    </CardTitle>
+                    <CardDescription className="mt-2 font-light leading-relaxed">
+                      {template.description}
+                    </CardDescription>
                   </div>
-                )}
-              </div>
-            </CardHeader>
+                  <div className={`w-6 h-6 rounded border-2 flex items-center justify-center ml-3 transition-colors ${
+                    isSelected 
+                      ? 'bg-primary border-primary' 
+                      : 'border-muted-foreground/30 hover:border-primary/50'
+                  }`}>
+                    {isSelected && (
+                      <Check size={14} className="text-primary-foreground" />
+                    )}
+                  </div>
+                </div>
+              </CardHeader>
             <CardContent className="pt-0">
               <div className="flex items-center justify-between">
                 <p className="text-sm text-muted-foreground font-light">
@@ -114,7 +121,8 @@ export function TemplateSelect({ selectedTemplate, onTemplateSelect }: TemplateS
               </div>
             </CardContent>
           </Card>
-        ))}
+        );
+        })}
       </div>
     </div>
   );
