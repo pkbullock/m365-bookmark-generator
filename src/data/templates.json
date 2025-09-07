@@ -629,5 +629,74 @@
                 "iconId": "pseudolocalize"
             }
         ]
+    },
+    {
+        "id":"microsoft-power-platform",
+        "name": "Microsoft Power Platform",
+        "description": "Links to Microsoft Power Platform Tools and Resources",
+        "bookmarks": [
+            {
+                "id": "600",
+                "name": "Microsoft Power Apps",
+                "url": "https://make.powerapps.com",
+                "folder": "Power Platform",
+                "iconId": "microsoft"
+            },
+            {
+                "id": "601",
+                "name": "Microsoft Power Automate",
+                "url": "https://make.powerautomate.com/",
+                "folder": "Power Platform",
+                "iconId": "microsoft"
+            },
+            {
+                "id": "602",
+                "name": "Microsoft Power Pages",
+                "url": "https://make.powerpages.microsoft.com/",
+                "folder": "Power Platform",
+                "iconId": "microsoft"
+            },
+            {
+                "id": "603",
+                "name": "Microsoft Power BI",
+                "url": "https://app.powerbi.com",
+                "folder": "Power Platform",
+                "iconId": "microsoft"
+            },
+            {
+                "id": "604",
+                "name": "Microsoft Copilot Studio",
+                "url": "https://copilotstudio.microsoft.com",
+                "folder": "Power Platform",
+                "iconId": "microsoft"
+            },
+            {
+                "id": "605",
+                "name": "Microsoft Power Platform Admin",
+                "url": "https://admin.powerplatform.microsoft.com/",
+                "folder": "Power Platform",
+                "iconId": "microsoft"
+            },
+            {
+                "id": "606",
+                "name": "Power Platform Developer Plan",
+                "url": "https://www.microsoft.com/en-us/power-platform/products/power-apps/free",
+                "folder": "Power Platform",
+                "iconId": "microsoft"
+            },
+            {
+                "id": "607",
+                "name": "Power Platform Community",
+                "url": "https://community.powerplatform.com/",
+                "folder": "Power Platform",
+                "iconId": "microsoft"
+            },{
+                "id": "608",
+                "name": "Power Platform Documentation",
+                "url": "https://learn.microsoft.com/en-us/power-platform/?WT.mc_id=M365-MVP-5003816",
+                "folder": "Power Platform",
+                "iconId": "microsoft"
+            }
+        ]
     }
 ]
