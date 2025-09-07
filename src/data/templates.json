@@ -378,246 +378,256 @@
     ]
   },
   {
-    "id": "m365-developer-essentials",
-    "name": "Microsoft 365 Developer Resources",
-    "description": "Links to Microsoft 365 Development Resources for Microsoft 365 Community",
-    "bookmarks": [
-      {
-        "id": "500",
-        "name": "All GitHub PnP Repositories",
-        "url": "https://github.com/orgs/pnp/repositories?type=all",
-        "folder": "Developer Samples",
-        "iconId": "github"
-      },
-      
-      {
-        "id": "501",
-        "name": "MIcrosoft Solution Sample Gallery",
-        "url": "https://adoption.microsoft.com/en-us/sample-solution-gallery/",
-        "folder": "Developer Samples",
-        "iconId": "microsoft"
-      },
-      
-      {
-        "id": "522",
-        "name": "Microsoft Graph Documentation",
-        "url": "https://learn.microsoft.com/en-us/graph/",
-        "folder": "Developer Docs",
-        "iconId": "microsoft"
-      },
-      {
-        "id": "523",
-        "name": "Azure Open AI Models Documentation",
-        "url": "https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/models?WT.mc_id=M365-MVP-5003816",
-        "folder": "Developer Docs",
-        "iconId": "microsoft"
-      },
-      {
-        "id": "524",
-        "name": "Azure Open AI Models Documentation",
-        "url": "https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/models?WT.mc_id=M365-MVP-5003816",
-        "folder": "Developer Docs",
-        "iconId": "microsoft"
-      },
-      {
-        "id": "525",
-        "name": "Microsoft 365 Copilot extensibility",
-        "url": "https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/?WT.mc_id=M365-MVP-5003816",
-        "folder": "Developer Docs",
-        "iconId": "microsoft"
-      },
-      {
-        "id": "526",
-        "name": "Copilot Studio Documentation",
-        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/fundamentals-what-is-copilot-studio?WT.mc_id=M365-MVP-5003816",
-        "folder": "Developer Docs",
-        "iconId": "microsoft"
-      },
-      {
-        "id": "527",
-        "name": "Semantic Kernel",
-        "url": "https://learn.microsoft.com/en-us/semantic-kernel/overview/?WT.mc_id=M365-MVP-5003816",
-        "folder": "Developer Docs",
-        "iconId": "microsoft"
-      },
-      {
-        "id": "528",
-        "name": "Agents SDK Documentation",
-        "url": "https://learn.microsoft.com/en-us/microsoft-365/agents-sdk/?WT.mc_id=M365-MVP-5003816",
-        "folder": "Developer Docs",
-        "iconId": "microsoft"
-      },
-      {
-        "id": "530",
-        "name": "SharePoint Development",
-        "url": "https://learn.microsoft.com/en-us/sharepoint/dev/general-development/sharepoint-development-overview?WT.mc_id=M365-MVP-5003816",
-        "folder": "Developer Docs",
-        "iconId": "microsoft"
-      },
-      {
-        "id": "531",
-        "name": "Teams Development Docs",
-        "url": "https://learn.microsoft.com/en-us/microsoftteams/platform/mstdd-landing?WT.mc_id=M365-MVP-5003816",
-        "folder": "Developer Docs",
-        "iconId": "microsoft"
-      },
-      {
-        "id": "532",
-        "name": "Agents SDK Documentation",
-        "url": "https://learn.microsoft.com/en-us/microsoft-365/agents-sdk/?WT.mc_id=M365-MVP-5003816",
-        "folder": "Developer Docs",
-        "iconId": "microsoft"
-      },
-      
-      {
-        "id": "533",
-        "name": "Copilot Studio Docs",
-        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/?WT.mc_id=M365-MVP-5003816",
-        "folder": "Developer Docs",
-        "iconId": "microsoft"
-      },
-      {
-        "id": "534",
-        "name": "TypeSpec Docs",
-        "url": "https://typespec.io/",
-        "folder": "Developer Docs",
-        "iconId": "typespec"
-      },
-      {
-        "id": "535",
-        "name": "Microsoft Learn - Training",
-        "url": "https://learn.microsoft.com/en-us/training/browse/",
-        "folder": "Developer Docs",
-        "iconId": "microsoft"
-      },
-      {
-        "id": "536",
-        "name": "NuGet",
-        "url": "https://www.nuget.org/",
-        "folder": "Developer Docs",
-        "iconId": "nuget"
-      },
-      {
-        "id": "537",
-        "name": "NPM",
-        "url": "https://www.npmjs.com/",
-        "folder": "Developer Docs",
-        "iconId": "npm"
-      },
-      {
-        "id": "538",
-        "name": "PowerShell Gallery",
-        "url": "https://www.powershellgallery.com/",
-        "folder": "Developer Docs",
-        "iconId": "powershell-gallery"
-      },
-
-
-       {
-        "id": "540",
-        "name": "GitHub",
-        "url": "https://github.com/",
-        "folder": "Developer Tools",
-        "iconId": "github"
-      },
-      {
-        "id": "541",
-        "name": "Microsoft Graph Explorer",
-        "url": "https://developer.microsoft.com/en-us/graph/graph-explorer",
-        "folder": "Developer Tools",
-        "iconId": "microsoft"
-      },
-      {
-        "id": "543",
-        "name": "Postman (Login)",
-        "url": "https://identity.getpostman.com/login?continue=https%3A%2F%2Fgo.postman.co%2Fhome&_uuid=f0e24556-a1a5-43df-bb7b-87db25060059",
-        "folder": "Developer Tools",
-        "iconId": "postman-login"
-      },
-      {
-        "id": "544",
-        "name": "Postman (Microsoft Graph Collection)",
-        "url": "https://www.postman.com/microsoftgraph/microsoft-graph/overview",
-        "folder": "Developer Tools",
-        "iconId": "postman"
-      },
-      {
-        "id": "545",
-        "name": "JSON Web Token (JWT) Debugger",
-        "url": "https://www.jwt.io/",
-        "folder": "Developer Tools",
-        "iconId": "jwt"
-      },
-      {
-        "id": "545",
-        "name": "Base64 Encode/Decode",
-        "url": "https://www.base64converter.org/",
-        "folder": "Developer Tools",
-        "iconId": "base64"
-      },
-      {
-        "id": "546",
-        "name": "Adaptive Cards",
-        "url": "https://adaptivecards.microsoft.com/",
-        "folder": "Developer Tools",
-        "iconId": "microsoft"
-      },
-      {
-        "id": "547",
-        "name": "DevProxy",
-        "url": "https://learn.microsoft.com/en-us/microsoft-cloud/dev/dev-proxy/get-started/set-up?tabs=automated&pivots=client-operating-system-windows&WT.mc_id=M365-MVP-5003816",
-        "folder": "Developer Tools",
-        "iconId": "microsoft"
-      },
-      {
-        "id": "548",
-        "name": "Teams Developer Portal",
-        "url": "https://dev.teams.microsoft.com/home",
-        "folder": "Developer Tools",
-        "iconId": "microsoft"
-      },
-      {
-        "id": "549",
-        "name": "hTWOo-REACT",
-        "url": "https://lab.n8d.studio/htwoo/htwoo-react",
-        "folder": "Developer Tools",
-        "iconId": "htwoo"
-      },
-      {
-        "id": "549",
-        "name": "Flicon",
-        "url": "https://www.flicon.io/",
-        "folder": "Developer Tools",
-        "iconId": "flicon"
-      },
-      {
-        "id": "549",
-        "name": "SP REST Explorer",
-        "url": "https://s-kainet.github.io/sp-rest-explorer/#/",
-        "folder": "Developer Tools",
-        "iconId": "sharepoint"
-      },
-      {
-        "id": "549",
-        "name": "Docker Hub",
-        "url": "https://hub.docker.com/",
-        "folder": "Developer Tools",
-        "iconId": "docker"
-      },
-      {
-        "id": "549",
-        "name": "Scheme Color",
-        "url": "https://www.schemecolor.com",
-        "folder": "Developer Tools",
-        "iconId": "schemecolor"
-      },
-      {
-        "id": "549",
-        "name": "Pseudolocalize!",
-        "url": "https://www.pseudolocalize.com/",
-        "folder": "Developer Tools",
-        "iconId": "pseudolocalize"
-      }
-    ]
-  }
+        "id":"microsoft-developer-samples",
+        "name": "Microsoft Developer Samples",
+        "description": "Links to Microsoft Developer Samples for inspiration and example",
+        "bookmarks": [
+            {
+                "id": "500",
+                "name": "All GitHub PnP Repositories",
+                "url": "https://github.com/orgs/pnp/repositories?type=all",
+                "folder": "Developer Samples",
+                "iconId": "github"
+            },
+            {
+                "id": "501",
+                "name": "Microsoft Solution Sample Gallery",
+                "url": "https://adoption.microsoft.com/en-us/sample-solution-gallery/",
+                "folder": "Developer Samples",
+                "iconId": "microsoft"
+            }
+        ]
+    },
+   {
+        "id": "m365-developer-docs",
+        "name": "Microsoft 365 Developer Docs",
+        "description": "Links to Microsoft 365 Development Documentation Sites for Microsoft 365 Community",
+        "bookmarks": [
+            
+            {
+                "id": "522",
+                "name": "Microsoft Graph Documentation",
+                "url": "https://learn.microsoft.com/en-us/graph?WT.mc_id=M365-MVP-5003816",
+                "folder": "Developer Docs",
+                "iconId": "microsoft"
+            },
+            {
+                "id": "523",
+                "name": "Azure Open AI Models Documentation",
+                "url": "https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/models?WT.mc_id=M365-MVP-5003816",
+                "folder": "Developer Docs",
+                "iconId": "microsoft"
+            },
+            {
+                "id": "524",
+                "name": "Azure Open AI Models Documentation",
+                "url": "https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/models?WT.mc_id=M365-MVP-5003816",
+                "folder": "Developer Docs",
+                "iconId": "microsoft"
+            },
+            {
+                "id": "525",
+                "name": "Microsoft 365 Copilot extensibility",
+                "url": "https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/?WT.mc_id=M365-MVP-5003816",
+                "folder": "Developer Docs",
+                "iconId": "microsoft"
+            },
+            {
+                "id": "526",
+                "name": "Copilot Studio Documentation",
+                "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/fundamentals-what-is-copilot-studio?WT.mc_id=M365-MVP-5003816",
+                "folder": "Developer Docs",
+                "iconId": "microsoft"
+            },
+            {
+                "id": "527",
+                "name": "Semantic Kernel",
+                "url": "https://learn.microsoft.com/en-us/semantic-kernel/overview/?WT.mc_id=M365-MVP-5003816",
+                "folder": "Developer Docs",
+                "iconId": "microsoft"
+            },
+            {
+                "id": "528",
+                "name": "Agents SDK Documentation",
+                "url": "https://learn.microsoft.com/en-us/microsoft-365/agents-sdk/?WT.mc_id=M365-MVP-5003816",
+                "folder": "Developer Docs",
+                "iconId": "microsoft"
+            },
+            {
+                "id": "530",
+                "name": "SharePoint Development",
+                "url": "https://learn.microsoft.com/en-us/sharepoint/dev/general-development/sharepoint-development-overview?WT.mc_id=M365-MVP-5003816",
+                "folder": "Developer Docs",
+                "iconId": "microsoft"
+            },
+            {
+                "id": "531",
+                "name": "Teams Development Docs",
+                "url": "https://learn.microsoft.com/en-us/microsoftteams/platform/mstdd-landing?WT.mc_id=M365-MVP-5003816",
+                "folder": "Developer Docs",
+                "iconId": "microsoft"
+            },
+            {
+                "id": "532",
+                "name": "Agents SDK Documentation",
+                "url": "https://learn.microsoft.com/en-us/microsoft-365/agents-sdk/?WT.mc_id=M365-MVP-5003816",
+                "folder": "Developer Docs",
+                "iconId": "microsoft"
+            },
+            {
+                "id": "533",
+                "name": "Copilot Studio Docs",
+                "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/?WT.mc_id=M365-MVP-5003816",
+                "folder": "Developer Docs",
+                "iconId": "microsoft"
+            },
+            {
+                "id": "534",
+                "name": "TypeSpec Docs",
+                "url": "https://typespec.io/",
+                "folder": "Developer Docs",
+                "iconId": "typespec"
+            },
+            {
+                "id": "535",
+                "name": "Microsoft Learn - Training",
+                "url": "https://learn.microsoft.com/en-us/training/browse/?WT.mc_id=M365-MVP-5003816",
+                "folder": "Developer Docs",
+                "iconId": "microsoft"
+            },
+            {
+                "id": "536",
+                "name": "NuGet",
+                "url": "https://www.nuget.org/",
+                "folder": "Developer Docs",
+                "iconId": "nuget"
+            },
+            {
+                "id": "537",
+                "name": "NPM",
+                "url": "https://www.npmjs.com/",
+                "folder": "Developer Docs",
+                "iconId": "npm"
+            },
+            {
+                "id": "538",
+                "name": "PowerShell Gallery",
+                "url": "https://www.powershellgallery.com/",
+                "folder": "Developer Docs",
+                "iconId": "powershell-gallery"
+            }
+        ]
+    },
+    {
+        "id": "m365-developer-tools",
+        "name": "Microsoft 365 Developer Tools",
+        "description": "Links to Microsoft 365 Development tools for Microsoft 365 Community",
+        "bookmarks": [
+            {
+                "id": "540",
+                "name": "GitHub",
+                "url": "https://github.com/",
+                "folder": "Developer Tools",
+                "iconId": "github"
+            },
+            {
+                "id": "541",
+                "name": "Microsoft Graph Explorer",
+                "url": "https://developer.microsoft.com/en-us/graph/graph-explorer",
+                "folder": "Developer Tools",
+                "iconId": "microsoft"
+            },
+            {
+                "id": "543",
+                "name": "Postman (Login)",
+                "url": "https://identity.getpostman.com/login?continue=https%3A%2F%2Fgo.postman.co%2Fhome&_uuid=f0e24556-a1a5-43df-bb7b-87db25060059",
+                "folder": "Developer Tools",
+                "iconId": "postman-login"
+            },
+            {
+                "id": "544",
+                "name": "Postman (Microsoft Graph Collection)",
+                "url": "https://www.postman.com/microsoftgraph/microsoft-graph/overview",
+                "folder": "Developer Tools",
+                "iconId": "postman"
+            },
+            {
+                "id": "545",
+                "name": "JSON Web Token (JWT) Debugger",
+                "url": "https://www.jwt.io/",
+                "folder": "Developer Tools",
+                "iconId": "jwt"
+            },
+            {
+                "id": "545",
+                "name": "Base64 Encode/Decode",
+                "url": "https://www.base64converter.org/",
+                "folder": "Developer Tools",
+                "iconId": "base64"
+            },
+            {
+                "id": "546",
+                "name": "Adaptive Cards",
+                "url": "https://adaptivecards.microsoft.com/",
+                "folder": "Developer Tools",
+                "iconId": "microsoft"
+            },
+            {
+                "id": "547",
+                "name": "DevProxy",
+                "url": "https://learn.microsoft.com/en-us/microsoft-cloud/dev/dev-proxy/get-started/set-up?tabs=automated&pivots=client-operating-system-windows&WT.mc_id=M365-MVP-5003816",
+                "folder": "Developer Tools",
+                "iconId": "microsoft"
+            },
+            {
+                "id": "548",
+                "name": "Teams Developer Portal",
+                "url": "https://dev.teams.microsoft.com/home",
+                "folder": "Developer Tools",
+                "iconId": "microsoft"
+            },
+            {
+                "id": "549",
+                "name": "hTWOo-REACT",
+                "url": "https://lab.n8d.studio/htwoo/htwoo-react",
+                "folder": "Developer Tools",
+                "iconId": "htwoo"
+            },
+            {
+                "id": "549",
+                "name": "Flicon",
+                "url": "https://www.flicon.io/",
+                "folder": "Developer Tools",
+                "iconId": "flicon"
+            },
+            {
+                "id": "549",
+                "name": "SP REST Explorer",
+                "url": "https://s-kainet.github.io/sp-rest-explorer/#/",
+                "folder": "Developer Tools",
+                "iconId": "sharepoint"
+            },
+            {
+                "id": "549",
+                "name": "Docker Hub",
+                "url": "https://hub.docker.com/",
+                "folder": "Developer Tools",
+                "iconId": "docker"
+            },
+            {
+                "id": "549",
+                "name": "Scheme Color",
+                "url": "https://www.schemecolor.com",
+                "folder": "Developer Tools",
+                "iconId": "schemecolor"
+            },
+            {
+                "id": "549",
+                "name": "Pseudolocalize!",
+                "url": "https://www.pseudolocalize.com/",
+                "folder": "Developer Tools",
+                "iconId": "pseudolocalize"
+            }
+        ]
+    }
 ]
