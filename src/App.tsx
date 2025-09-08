@@ -36,34 +36,36 @@ function App() {
   return (
     <ThemeProvider>
       <div className="min-h-screen bg-gradient-to-br from-background to-fluent-neutral-10 flex flex-col">
-        <div className="flex-1 border-blue-500">
+        <header className="text-center">
           <div className="container mx-auto py-8 px-4 max-w-6xl">
-            <header className="text-center mb-8">
-              <div className="flex items-center justify-between mb-6">
-                <div className="flex-1" />
-                <div className="flex items-center justify-center gap-3">
-                  <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center shadow-lg hidden sm:flex">
-                    <FileTextIcon size={24} className="text-primary-foreground" />
-                  </div>
-                  <h1 className="text-4xl font-light text-foreground">
-                    Microsoft 365 Bookmarks
-                  </h1>
+            <div className="flex items-center justify-between mb-6">
+              <div className="flex-1" />
+              <div className="flex items-center justify-center gap-3">
+                <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center shadow-lg hidden sm:flex">
+                  <FileTextIcon size={24} className="text-primary-foreground" />
                 </div>
-                <div className="flex-1 flex justify-end items-center gap-2">
-                  <span
-                    className="flex items-center justify-center h-9 px-3 rounded bg-yellow-400 text-xs font-semibold text-black shadow-sm"
-                    style={{ minWidth: '48px' }}
-                  >
-                    Beta
-                  </span>
-                  <ThemeToggle />
-                </div>
+                <h1 className="text-4xl font-light text-foreground">
+                  Microsoft 365 Bookmarks
+                </h1>
               </div>
-              <p className="text-lg font-light text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                Generate and download Microsoft 365 bookmark collections for easy import into Microsoft Edge, ideal for users who create new Edge profiles regularly
-              </p>
-            </header>
+              <div className="flex-1 flex justify-end items-center gap-2">
+                <span
+                  className="flex items-center justify-center h-9 px-3 rounded bg-yellow-400 text-xs font-semibold text-black shadow-sm"
+                  style={{ minWidth: '48px' }}
+                >
+                  Beta
+                </span>
+                <ThemeToggle />
+              </div>
+            </div>
+            <p className="text-lg font-light text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+              Generate and download Microsoft 365 bookmark collections for easy import into Microsoft Edge, ideal for users who create new Edge profiles regularly
+            </p>
+          </div>
+        </header>
 
+        <main className="flex-1 border-blue-500">
+          <div className="container mx-auto py-8 px-4 max-w-6xl">
             <Card className="mb-8 border shadow-sm bg-gradient-to-r from-card via-card to-fluent-neutral-10">
               <CardHeader className="pb-4">
                 <CardTitle className="flex items-center gap-3 text-xl font-medium">
@@ -147,9 +149,11 @@ function App() {
               </TabsContent>
             </Tabs>
           </div>
-        </div>
+        </main>
 
-        <Footer />
+        <footer>
+          <Footer />
+        </footer>
         <Toaster />
       </div>
     </ThemeProvider>
