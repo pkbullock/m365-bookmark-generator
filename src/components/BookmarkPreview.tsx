@@ -119,12 +119,12 @@ export function BookmarkPreview({ bookmarks, selectedTemplates = [] }: BookmarkP
                     </li>
                   </ol>
                 </div>
-                <div className="bg-primary/5 border border-primary/20 rounded-lg p-4">
+                {/* <div className="bg-primary/5 border border-primary/20 rounded-lg p-4">
                   <p className="text-sm text-primary font-light leading-relaxed">
                     💡 <strong>Tip:</strong> Your Microsoft 365 bookmarks will appear in a new folder in your favorites bar,
                     making it easy to access all your productivity tools in one place.
                   </p>
-                </div>
+                </div> */}
               </div>
             </CardContent>
           </Card>

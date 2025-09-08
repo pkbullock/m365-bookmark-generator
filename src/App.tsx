@@ -51,7 +51,7 @@ function App() {
                 </div>
                 <div className="flex-1 flex justify-end items-center gap-2">
                   <span
-                    className="flex items-center justify-center h-9 px-3 rounded bg-yellow-400 text-xs font-semibold text-yellow-900 shadow-sm"
+                    className="flex items-center justify-center h-9 px-3 rounded bg-yellow-400 text-xs font-semibold text-black shadow-sm"
                     style={{ minWidth: '48px' }}
                   >
                     Beta
@@ -80,7 +80,7 @@ function App() {
                       1
                     </div>
                     <div className="flex-1">
-                      <h4 className="font-medium text-base mb-2">Choose Template</h4>
+                      <h2 className="font-medium text-base mb-2">Choose Template</h2>
                       <p className="text-muted-foreground text-sm leading-relaxed">
                         Select a predefined collection of Microsoft 365 bookmarks
                       </p>
@@ -91,7 +91,7 @@ function App() {
                       2
                     </div>
                     <div className="flex-1">
-                      <h4 className="font-medium text-base mb-2">Customize (Optional)</h4>
+                      <h2 className="font-medium text-base mb-2">Customize (Optional)</h2>
                       <p className="text-muted-foreground text-sm leading-relaxed">
                         Add, edit, or remove bookmarks to fit your needs
                       </p>
@@ -102,7 +102,7 @@ function App() {
                       3
                     </div>
                     <div className="flex-1">
-                      <h4 className="font-medium text-base mb-2">Download & Import</h4>
+                      <h2 className="font-medium text-base mb-2">Download & Import</h2>
                       <p className="text-muted-foreground text-sm leading-relaxed">
                         Download the file and import it into Microsoft Edge
                       </p>
@@ -113,7 +113,7 @@ function App() {
             </Card>
 
             <Tabs defaultValue="templates" className="space-y-8">
-              <TabsList className="w-full max-w-md mx-auto grid grid-cols-3 bg-fluent-neutral-10 border border-border">
+              <TabsList className="w-full max-w-md mx-auto grid grid-cols-3 border border-border">
                 <TabsTrigger value="templates" className="flex items-center gap-2 data-[state=active]:bg-card data-[state=active]:shadow-sm">
                   <FileTextIcon size={16} />
                   Templates
