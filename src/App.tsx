@@ -114,7 +114,7 @@ function App() {
               </CardContent>
             </Card>
 
-            <Tabs defaultValue="templates" className="space-y-8">
+            <Tabs defaultValue="templates" className="space-y-8" role="navigation">
               <TabsList className="w-full max-w-md mx-auto grid grid-cols-3 border border-border">
                 <TabsTrigger value="templates" className="flex items-center gap-2 data-[state=active]:bg-card data-[state=active]:shadow-sm">
                   <FileTextIcon size={16} />
