@@ -150,10 +150,7 @@ function App() {
             </Tabs>
           </div>
         </main>
-
-        <footer>
-          <Footer />
-        </footer>
+        <Footer />
         <Toaster />
       </div>
     </ThemeProvider>
