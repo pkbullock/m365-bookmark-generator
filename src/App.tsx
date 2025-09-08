@@ -80,7 +80,7 @@ function App() {
                       1
                     </div>
                     <div className="flex-1">
-                      <h4 className="font-medium text-base mb-2">Choose Template</h4>
+                      <h2 className="font-medium text-base mb-2">Choose Template</h2>
                       <p className="text-muted-foreground text-sm leading-relaxed">
                         Select a predefined collection of Microsoft 365 bookmarks
                       </p>
@@ -91,7 +91,7 @@ function App() {
                       2
                     </div>
                     <div className="flex-1">
-                      <h4 className="font-medium text-base mb-2">Customize (Optional)</h4>
+                      <h2 className="font-medium text-base mb-2">Customize (Optional)</h2>
                       <p className="text-muted-foreground text-sm leading-relaxed">
                         Add, edit, or remove bookmarks to fit your needs
                       </p>
@@ -102,7 +102,7 @@ function App() {
                       3
                     </div>
                     <div className="flex-1">
-                      <h4 className="font-medium text-base mb-2">Download & Import</h4>
+                      <h2 className="font-medium text-base mb-2">Download & Import</h2>
                       <p className="text-muted-foreground text-sm leading-relaxed">
                         Download the file and import it into Microsoft Edge
                       </p>
