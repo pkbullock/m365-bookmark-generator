@@ -51,7 +51,7 @@ function App() {
                 </div>
                 <div className="flex-1 flex justify-end items-center gap-2">
                   <span
-                    className="flex items-center justify-center h-9 px-3 rounded bg-yellow-400 text-xs font-semibold text-yellow-900 shadow-sm"
+                    className="flex items-center justify-center h-9 px-3 rounded bg-yellow-400 text-xs font-semibold text-black shadow-sm"
                     style={{ minWidth: '48px' }}
                   >
                     Beta
@@ -113,7 +113,7 @@ function App() {
             </Card>
 
             <Tabs defaultValue="templates" className="space-y-8">
-              <TabsList className="w-full max-w-md mx-auto grid grid-cols-3 bg-fluent-neutral-10 border border-border">
+              <TabsList className="w-full max-w-md mx-auto grid grid-cols-3 border border-border">
                 <TabsTrigger value="templates" className="flex items-center gap-2 data-[state=active]:bg-card data-[state=active]:shadow-sm">
                   <FileTextIcon size={16} />
                   Templates

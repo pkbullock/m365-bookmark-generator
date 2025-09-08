@@ -23,7 +23,7 @@
   --secondary-foreground: oklch(0.2 0 0);
   
   --muted: oklch(0.97 0.005 270);
-  --muted-foreground: oklch(0.45 0.01 270);
+  --muted-foreground: oklch(0.2 0.01 270);
   --accent: oklch(0.65 0.12 275);
   --accent-foreground: oklch(1 0 0);
   
@@ -56,12 +56,12 @@
   
   /* Microsoft Blue theme - adjusted for dark mode */
   --primary: oklch(0.6 0.18 250);
-  --primary-foreground: oklch(0.1 0 0);
+  --primary-foreground: oklch(1 0 0);
   --secondary: oklch(0.15 0.01 270);
   --secondary-foreground: oklch(0.85 0.005 270);
   
   --muted: oklch(0.15 0.005 270);
-  --muted-foreground: oklch(0.6 0.01 270);
+  --muted-foreground: oklch(0.8 0.00011 271.152);
   --accent: oklch(0.7 0.12 275);
   --accent-foreground: oklch(0.1 0 0);
   
