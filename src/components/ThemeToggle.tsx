@@ -13,9 +13,9 @@ export function ThemeToggle() {
       className="w-9 h-9 p-0"
     >
       {theme === 'light' ? (
-        <MoonIcon size={16} />
+        <MoonIcon size={16}  />
       ) : (
-        <SunIcon size={16} />
+        <SunIcon size={16} className="text-white" />
       )}
       <span className="sr-only">
         Switch to {theme === 'light' ? 'dark' : 'light'} mode
