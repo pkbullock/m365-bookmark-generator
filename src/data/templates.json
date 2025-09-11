@@ -94,6 +94,34 @@
         "url": "https://myaccess.microsoft.com",
         "folder": "Microsoft 365",
         "iconId": "microsoft"
+      },
+      {
+        "id": "15",
+        "name": "Planner",
+        "url": "https://planner.cloud.microsoft.com",
+        "folder": "Microsoft 365",
+        "iconId": "my-tasks"
+      },
+      {
+        "id": "16",
+        "name": "To Do",
+        "url": "https://to-do.office.com/tasks/today",
+        "folder": "Microsoft 365",
+        "iconId": "todo"
+      },
+      {
+        "id": "17",
+        "name": "Whiteboard",
+        "url": "https://whiteboard.cloud.microsoft",
+        "folder": "Microsoft 365",
+        "iconId": "whiteboard"
+      },
+      {
+        "id": "18",
+        "name": "Microsoft Forms",
+        "url": "https://forms.office.com",
+        "folder": "Microsoft 365",
+        "iconId": "forms"
       }
     ]
   },
@@ -720,35 +748,35 @@
                 "name": "Microsoft Power Apps",
                 "url": "https://make.powerapps.com",
                 "folder": "Power Platform",
-                "iconId": "microsoft"
+                "iconId": "powerapps"
             },
             {
                 "id": "601",
                 "name": "Microsoft Power Automate",
                 "url": "https://make.powerautomate.com/",
                 "folder": "Power Platform",
-                "iconId": "microsoft"
+                "iconId": "power-automate"
             },
             {
                 "id": "602",
                 "name": "Microsoft Power Pages",
                 "url": "https://make.powerpages.microsoft.com/",
                 "folder": "Power Platform",
-                "iconId": "microsoft"
+                "iconId": "power-pages"
             },
             {
                 "id": "603",
                 "name": "Microsoft Power BI",
                 "url": "https://app.powerbi.com",
                 "folder": "Power Platform",
-                "iconId": "microsoft"
+                "iconId": "power-bi"
             },
             {
                 "id": "604",
                 "name": "Microsoft Copilot Studio",
                 "url": "https://copilotstudio.microsoft.com",
                 "folder": "Power Platform",
-                "iconId": "microsoft"
+                "iconId": "copilot-studio"
             },
             {
                 "id": "605",
