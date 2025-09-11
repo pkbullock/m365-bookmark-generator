@@ -94,6 +94,34 @@
         "url": "https://myaccess.microsoft.com",
         "folder": "Microsoft 365",
         "iconId": "microsoft"
+      },
+      {
+        "id": "15",
+        "name": "Planner",
+        "url": "https://planner.cloud.microsoft.com",
+        "folder": "Microsoft 365",
+        "iconId": "my-tasks"
+      },
+      {
+        "id": "16",
+        "name": "To Do",
+        "url": "https://to-do.office.com/tasks/today",
+        "folder": "Microsoft 365",
+        "iconId": "todo"
+      },
+      {
+        "id": "17",
+        "name": "Whiteboard",
+        "url": "https://whiteboard.cloud.microsoft",
+        "folder": "Microsoft 365",
+        "iconId": "whiteboard"
+      },
+      {
+        "id": "18",
+        "name": "Microsoft Forms",
+        "url": "https://forms.office.com",
+        "folder": "Microsoft 365",
+        "iconId": "forms"
       }
     ]
   },
@@ -160,71 +188,150 @@
       },
       {
         "id": "309",
+        "name": "Reusable React controls for your SharePoint Framework solutions",
+        "url": "https://pnp.github.io/sp-dev-fx-controls-react/",
+        "folder": "M365 Community Sites",
+        "iconId": "pnp"
+      },
+      {
+        "id": "310",
+        "name": "Reusable Property controls for your SharePoint Framework solutions",
+        "url": "https://pnp.github.io/sp-dev-fx-property-controls/",
+        "folder": "M365 Community Sites",
+        "iconId": "pnp"
+      },
+      {
+        "id": "311",
+        "name": "List Formatting",
+        "url": "https://pnp.github.io/List-Formatting/",
+        "folder": "M365 Community Sites",
+        "iconId": "pnp"
+      },
+      {
+        "id": "312",
+        "name": "PnP Modern Search",
+        "url": "https://microsoft-search.github.io/pnp-modern-search/",
+        "folder": "M365 Community Sites",
+        "iconId": "pnp"
+      },
+
+
+      {
+        "id": "359",
         "name": "PnP PowerShell",
         "url": "https://pnp.github.io/powershell/",
         "folder": "M365 Community Sites",
         "iconId": "pnp"
       },
       {
-        "id": "311",
+        "id": "351",
         "name": "PnP PowerShell",
         "url": "https://github.com/pnp/powershell",
         "folder": "M365 Community GitHub Repos",
         "iconId": "github"
       },
       {
-        "id": "312",
+        "id": "352",
         "name": "PnP Modern Search",
         "url": "https://github.com/pnp/search",
         "folder": "M365 Community GitHub Repos",
         "iconId": "github"
       },
       {
-        "id": "313",
+        "id": "353",
         "name": "PnP Reusable Controls",
         "url": "https://github.com/pnp/spfx-controls-react",
         "folder": "M365 Community GitHub Repos",
         "iconId": "github"
       },
       {
-        "id": "314",
+        "id": "354",
         "name": "PnP SPFx Web Parts",
         "url": "https://github.com/pnp/sp-dev-fx-webparts",
         "folder": "M365 Community GitHub Repos",
         "iconId": "github"
       },
       {
-        "id": "315",
+        "id": "355",
         "name": "PnP Copilot Prompts",
         "url": "https://github.com/pnp/copilot-prompts",
         "folder": "M365 Community GitHub Repos",
         "iconId": "github"
       },
       {
-        "id": "316",
+        "id": "356",
         "name": "PnP Copilot Pro Dev Samples",
         "url": "https://github.com/pnp/copilot-pro-dev-samples",
         "folder": "M365 Community GitHub Repos",
         "iconId": "github"
       },
       {
-        "id": "317",
+        "id": "357",
         "name": "PnP Framework",
         "url": "https://github.com/pnp/pnpframework",
         "folder": "M365 Community GitHub Repos",
         "iconId": "github"
       },
       {
-        "id": "318",
+        "id": "358",
         "name": "PnP Core SDK",
         "url": "https://github.com/pnp/pnpcore",
         "folder": "M365 Community GitHub Repos",
         "iconId": "github"
       },
       {
-        "id": "319",
+        "id": "359",
         "name": "All GitHub PnP Repositories",
         "url": "https://github.com/orgs/pnp/repositories?type=all",
+        "folder": "M365 Community GitHub Repos",
+        "iconId": "github"
+      },
+      {
+        "id": "360",
+        "name": "SPFx Aces",
+        "url": "https://github.com/pnp/sp-dev-fx-aces",
+        "folder": "M365 Community GitHub Repos",
+        "iconId": "github"
+      },
+      {
+        "id": "361",
+        "name": "SPFx Starter Kit",
+        "url": "https://github.com/pnp/sp-starter-kit",
+        "folder": "M365 Community GitHub Repos",
+        "iconId": "github"
+      },
+      {
+        "id": "362",
+        "name": "Power Platform Samples",
+        "url": "https://github.com/pnp/powerplatform-samples",
+        "folder": "M365 Community GitHub Repos",
+        "iconId": "github"
+      },
+      {
+        "id": "363",
+        "name": "Power Platform Snippets",
+        "url": "https://github.com/pnp/powerplatform-snippets",
+        "folder": "M365 Community GitHub Repos",
+        "iconId": "github"
+      },
+      {
+        "id": "364",
+        "name": "Office Add-in Samples",
+        "url": "https://github.com/OfficeDev/Office-Add-in-samples",
+        "folder": "M365 Community GitHub Repos",
+        "iconId": "github"
+      },
+      {
+        "id": "365",
+        "name": "SPFx Library Components",
+        "url": "https://github.com/pnp/sp-dev-fx-library-components",
+        "folder": "M365 Community GitHub Repos",
+        "iconId": "github"
+      },
+      {
+        "id": "366",
+        "name": "Custom Learning for Office 365",
+        "url": "https://github.com/pnp/custom-learning-office-365",
         "folder": "M365 Community GitHub Repos",
         "iconId": "github"
       }
@@ -481,6 +588,13 @@
                 "url": "https://www.powershellgallery.com/",
                 "folder": "Developer Docs",
                 "iconId": "powershell-gallery"
+            },
+            {
+                "id": "539",
+                "name": "Microsoft Graph SDK overview",
+                "url": "https://learn.microsoft.com/en-us/graph/sdks/sdks-overview?WT.mc_id=M365-MVP-5003816",
+                "folder": "Developer Docs",
+                "iconId": "microsoft"
             }
         ]
     },
@@ -593,6 +707,34 @@
                 "url": "https://www.pseudolocalize.com/",
                 "folder": "Developer Tools",
                 "iconId": "pseudolocalize"
+            },
+            {
+                "id": "550",
+                "name": "SP Editor",
+                "url": "https://microsoftedge.microsoft.com/addons/detail/sp-editor/affnnhcbfmcbbdlcadgkdbfafigmjdkk",
+                "folder": "Developer Tools",
+                "iconId": "microsoft"
+            },
+            {
+                "id": "551",
+                "name": "SP Dev Tools",
+                "url": "https://microsoftedge.microsoft.com/addons/detail/sp-dev-tools/ldgfbffkpkbghhkmjkjjlgfndkmdmclg",
+                "folder": "Developer Tools",
+                "iconId": "microsoft"
+            },
+            {
+                "id": "552",
+                "name": "Microsoft Q&A (M365 & Graph)",
+                "url": "https://learn.microsoft.com/en-us/answers/topics/m365-office.html",
+                "folder": "Developer Tools",
+                "iconId": "microsoft"
+            },
+            {
+                "id": "553",
+                "name": "Microsoft Q&A (Teams Dev)",
+                "url": "https://learn.microsoft.com/en-us/answers/topics/office-teams-development-routing.html",
+                "folder": "Developer Tools",
+                "iconId": "microsoft"
             }
         ]
     },
@@ -606,35 +748,35 @@
                 "name": "Microsoft Power Apps",
                 "url": "https://make.powerapps.com",
                 "folder": "Power Platform",
-                "iconId": "microsoft"
+                "iconId": "powerapps"
             },
             {
                 "id": "601",
                 "name": "Microsoft Power Automate",
                 "url": "https://make.powerautomate.com/",
                 "folder": "Power Platform",
-                "iconId": "microsoft"
+                "iconId": "power-automate"
             },
             {
                 "id": "602",
                 "name": "Microsoft Power Pages",
                 "url": "https://make.powerpages.microsoft.com/",
                 "folder": "Power Platform",
-                "iconId": "microsoft"
+                "iconId": "power-pages"
             },
             {
                 "id": "603",
                 "name": "Microsoft Power BI",
                 "url": "https://app.powerbi.com",
                 "folder": "Power Platform",
-                "iconId": "microsoft"
+                "iconId": "power-bi"
             },
             {
                 "id": "604",
                 "name": "Microsoft Copilot Studio",
                 "url": "https://copilotstudio.microsoft.com",
                 "folder": "Power Platform",
-                "iconId": "microsoft"
+                "iconId": "copilot-studio"
             },
             {
                 "id": "605",
