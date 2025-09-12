@@ -95,7 +95,7 @@ function App() {
                     <div className="flex-1">
                       <h2 className="font-medium text-base mb-2">Customize (Optional)</h2>
                       <p className="text-muted-foreground text-sm leading-relaxed">
-                        Add, edit, or remove bookmarks to fit your needs
+                        Remove bookmarks to fit your needs
                       </p>
                     </div>
                   </div>
@@ -122,7 +122,7 @@ function App() {
                 </TabsTrigger>
                 <TabsTrigger value="manage" className="flex items-center gap-2 data-[state=active]:bg-card data-[state=active]:shadow-sm">
                   <GearIcon size={16} />
-                  Manage
+                  Customize
                 </TabsTrigger>
                 <TabsTrigger value="preview" className="flex items-center gap-2 data-[state=active]:bg-card data-[state=active]:shadow-sm">
                   <EyeIcon size={16} />
