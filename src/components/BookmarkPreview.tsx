@@ -119,12 +119,6 @@ export function BookmarkPreview({ bookmarks, selectedTemplates = [] }: BookmarkP
                     </li>
                   </ol>
                 </div>
-                {/* <div className="bg-primary/5 border border-primary/20 rounded-lg p-4">
-                  <p className="text-sm text-primary font-light leading-relaxed">
-                    💡 <strong>Tip:</strong> Your Microsoft 365 bookmarks will appear in a new folder in your favorites bar,
-                    making it easy to access all your productivity tools in one place.
-                  </p>
-                </div> */}
               </div>
             </CardContent>
           </Card>
@@ -185,16 +179,12 @@ export function BookmarkPreview({ bookmarks, selectedTemplates = [] }: BookmarkP
             </div>
             <h3 className="text-2xl font-medium mb-4">No bookmarks to preview</h3>
             <p className="text-muted-foreground text-center max-w-md font-light leading-relaxed mb-6">
-              {/* Select a template or add bookmarks to see the preview and download your Microsoft 365 bookmark collection */}
               Select a template to see the preview and download your Microsoft 365 bookmark collection
             </p>
             <div className="flex gap-3">
               <Button variant="outline">
                 Go to Templates
               </Button>
-              {/* <Button>
-                Add Bookmarks
-              </Button> */}
             </div>
           </CardContent>
         </Card>

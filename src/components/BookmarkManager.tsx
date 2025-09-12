@@ -1,12 +1,7 @@
-import { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { PlusIcon, PencilIcon, TrashIcon, FolderIcon, FolderOpenIcon, GearIcon } from '@phosphor-icons/react';
-import { type Bookmark, validateUrl, generateUniqueId } from '@/lib/bookmarks';
+import { TrashIcon, FolderIcon, FolderOpenIcon, GearIcon } from '@phosphor-icons/react';
+import { type Bookmark} from '@/lib/bookmarks';
 import { toast } from 'sonner';
 
 interface BookmarkManagerProps {
@@ -15,123 +10,18 @@ interface BookmarkManagerProps {
 }
 
 export function BookmarkManager({ bookmarks, onBookmarksChange }: BookmarkManagerProps) {
-  const [isAddDialogOpen, setIsAddDialogOpen] = useState(false);
-  const [editingBookmark, setEditingBookmark] = useState<Bookmark | null>(null);
-  const [newBookmark, setNewBookmark] = useState({ name: '', url: '', folder: '' });
-
-  const folders = Array.from(new Set(bookmarks.map(b => b.folder).filter(Boolean))) as string[];
   const groupedBookmarks = bookmarks.reduce((acc, bookmark) => {
     const folder = bookmark.folder || 'Uncategorized';
     if (!acc[folder]) acc[folder] = [];
     acc[folder].push(bookmark);
     return acc;
   }, {} as Record<string, Bookmark[]>);
-
-  const handleAddBookmark = () => {
-    if (!newBookmark.name.trim() || !newBookmark.url.trim()) {
-      toast.error('Please fill in both name and URL');
-      return;
-    }
-
-    if (!validateUrl(newBookmark.url)) {
-      toast.error('Please enter a valid URL');
-      return;
-    }
-
-    const bookmark: Bookmark = {
-      id: generateUniqueId(),
-      name: newBookmark.name.trim(),
-      url: newBookmark.url.trim(),
-      folder: newBookmark.folder || undefined
-    };
-    
-    onBookmarksChange([...bookmarks, bookmark]);
-    setNewBookmark({ name: '', url: '', folder: '' });
-    setIsAddDialogOpen(false);
-    toast.success('Bookmark added successfully');
-  };
-
-  const handleEditBookmark = (bookmark: Bookmark) => {
-    setEditingBookmark(bookmark);
-    setNewBookmark({
-      name: bookmark.name,
-      url: bookmark.url,
-      folder: bookmark.folder || ''
-    });
-  };
-
-  const handleUpdateBookmark = () => {
-    if (!editingBookmark) return;
-
-    if (!newBookmark.name.trim() || !newBookmark.url.trim()) {
-      toast.error('Please fill in both name and URL');
-      return;
-    }
-
-    if (!validateUrl(newBookmark.url)) {
-      toast.error('Please enter a valid URL');
-      return;
-    }
-
-    const updatedBookmarks = bookmarks.map(b => 
-      b.id === editingBookmark.id 
-        ? { ...b, name: newBookmark.name.trim(), url: newBookmark.url.trim(), folder: newBookmark.folder || undefined }
-        : b
-    );
-
-    onBookmarksChange(updatedBookmarks);
-    setEditingBookmark(null);
-    setNewBookmark({ name: '', url: '', folder: '' });
-    toast.success('Bookmark updated successfully');
-  };
-
+ 
   const handleDeleteBookmark = (bookmarkId: string) => {
     const updatedBookmarks = bookmarks.filter(b => b.id !== bookmarkId);
     onBookmarksChange(updatedBookmarks);
     toast.success('Bookmark removed');
   };
-
-  const BookmarkForm = () => (
-    <div className="space-y-6">
-      <div className="space-y-2">
-        <Label htmlFor="bookmark-name" className="text-sm font-medium">Bookmark Name</Label>
-        <Input
-          id="bookmark-name"
-          value={newBookmark.name}
-          onChange={(e) => setNewBookmark(prev => ({ ...prev, name: e.target.value }))}
-          placeholder="e.g., Microsoft Teams"
-        />
-      </div>
-      <div className="space-y-2">
-        <Label htmlFor="bookmark-url" className="text-sm font-medium">URL</Label>
-        <Input
-          id="bookmark-url"
-          value={newBookmark.url}
-          onChange={(e) => setNewBookmark(prev => ({ ...prev, url: e.target.value }))}
-          placeholder="https://teams.microsoft.com"
-        />
-      </div>
-      <div className="space-y-2">
-        <Label htmlFor="bookmark-folder" className="text-sm font-medium">Folder (Optional)</Label>
-        <Select value={newBookmark.folder} onValueChange={(value) => setNewBookmark(prev => ({ ...prev, folder: value }))}>
-          <SelectTrigger>
-            <SelectValue placeholder="Select or create folder" />
-          </SelectTrigger>
-          <SelectContent>
-            <SelectItem value="">No folder</SelectItem>
-            {folders.map(folder => (
-              <SelectItem key={folder} value={folder}>{folder}</SelectItem>
-            ))}
-          </SelectContent>
-        </Select>
-        <Input
-          value={newBookmark.folder}
-          onChange={(e) => setNewBookmark(prev => ({ ...prev, folder: e.target.value }))}
-          placeholder="Or type new folder name"
-        />
-      </div>
-    </div>
-  );
 
   return (
     <div className="space-y-8">
@@ -143,67 +33,9 @@ export function BookmarkManager({ bookmarks, onBookmarksChange }: BookmarkManage
             </div>
             <h2 className="text-2xl font-light text-foreground">Manage Bookmarks</h2>
           </div>
-          <p className="text-muted-foreground font-light">Add, edit, or remove bookmarks from your collection</p>
-        </div>
-        <div>
-          {/* <Button 
-            className="px-6 py-2 h-auto" 
-            onClick={() => setIsAddDialogOpen(true)}
-          >
-            <PlusIcon size={16} className="mr-2" />
-            Add Bookmark
-          </Button> */}
-          
-          <Dialog open={isAddDialogOpen} onOpenChange={setIsAddDialogOpen}>
-            <DialogContent className="border shadow-2xl">
-              <DialogHeader className="pb-4">
-                <DialogTitle className="text-xl font-medium">Add New Bookmark</DialogTitle>
-              </DialogHeader>
-              <BookmarkForm />
-              <div className="flex justify-end gap-3 mt-6 pt-4 border-t border-border">
-                <Button 
-                  variant="outline" 
-                  onClick={() => setIsAddDialogOpen(false)}
-                >
-                  Cancel
-                </Button>
-                <Button 
-                  onClick={handleAddBookmark}
-                >
-                  Add Bookmark
-                </Button>
-              </div>
-            </DialogContent>
-          </Dialog>
+          <p className="text-muted-foreground font-light">Remove unwanted bookmarks from your collection</p>
         </div>
       </div>
-
-      {editingBookmark && (
-        <Dialog open={!!editingBookmark} onOpenChange={(open) => {
-          if (!open) setEditingBookmark(null);
-        }}>
-          <DialogContent className="border shadow-2xl">
-            <DialogHeader className="pb-4">
-              <DialogTitle className="text-xl font-medium">Edit Bookmark</DialogTitle>
-            </DialogHeader>
-            <BookmarkForm />
-            <div className="flex justify-end gap-3 mt-6 pt-4 border-t border-border">
-              <Button 
-                variant="outline" 
-                onClick={() => setEditingBookmark(null)}
-              >
-                Cancel
-              </Button>
-              <Button 
-                onClick={handleUpdateBookmark}
-              >
-                Update Bookmark
-              </Button>
-            </div>
-          </DialogContent>
-        </Dialog>
-      )}
-
       <div className="space-y-6">
         {Object.entries(groupedBookmarks).map(([folder, folderBookmarks]) => (
           <Card key={folder} className="border shadow-sm">
@@ -223,8 +55,8 @@ export function BookmarkManager({ bookmarks, onBookmarksChange }: BookmarkManage
             <CardContent className="pt-4">
               <div className="space-y-3">
                 {folderBookmarks.map((bookmark) => (
-                  <div 
-                    key={bookmark.id} 
+                  <div
+                    key={bookmark.id}
                     className="flex items-center justify-between p-4 bg-gradient-to-r from-fluent-neutral-10 to-transparent rounded-lg border border-border/30 hover:border-border transition-colors"
                   >
                     <div className="flex-1 min-w-0">
@@ -234,14 +66,6 @@ export function BookmarkManager({ bookmarks, onBookmarksChange }: BookmarkManage
                       </p>
                     </div>
                     <div className="flex items-center gap-2 ml-4">
-                      {/* <Button
-                        size="sm"
-                        variant="ghost"
-                        className="w-8 h-8 p-0"
-                        onClick={() => handleEditBookmark(bookmark)}
-                      >
-                        <PencilIcon size={14} />
-                      </Button> */}
                       <Button
                         size="sm"
                         variant="ghost"
@@ -267,16 +91,8 @@ export function BookmarkManager({ bookmarks, onBookmarksChange }: BookmarkManage
             </div>
             <h3 className="text-xl font-medium mb-3">No bookmarks yet</h3>
             <p className="text-muted-foreground text-center mb-6 max-w-md font-light leading-relaxed">
-              {/* Start by selecting a template or add your first bookmark to begin building your collection */}
               Start by selecting a template to manage your Microsoft 365 bookmark collection before download
-
             </p>
-            {/* <Button 
-              onClick={() => setIsAddDialogOpen(true)}
-            >
-              <PlusIcon size={16} className="mr-2" />
-              Add First Bookmark
-            </Button> */}
           </CardContent>
         </Card>
       )}
