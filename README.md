@@ -19,7 +19,7 @@ All data processed locally in your browser. No bookmarks are read or automatical
 
 ## AI Transparency
 
-This app was assisted with AI to build the site. A POC was build using GitHub Spark
+This app was assisted with AI to build the site. A POC was build using GitHub Spark as both a research area to understand the outputs of the product and to contribute something small and useful to the community.
 
 ## License
 
