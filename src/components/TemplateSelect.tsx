@@ -1,9 +1,8 @@
 import { useState, useEffect } from 'react';
-import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { type BookmarkTemplate } from '@/lib/bookmarks';
 import { loadTemplates } from '@/lib/templateService';
-import { Check, Sparkle } from '@phosphor-icons/react';
+import { CheckIcon, SparkleIcon } from '@phosphor-icons/react';
 
 interface TemplateSelectProps {
   selectedTemplates: BookmarkTemplate[];
@@ -35,7 +34,7 @@ export function TemplateSelect({ selectedTemplates, onTemplateSelect }: Template
         <div className="text-center">
           <div className="inline-flex items-center gap-3 mb-4">
             <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
-              <Sparkle size={20} className="text-primary animate-pulse" />
+              <SparkleIcon size={20} className="text-primary animate-pulse" />
             </div>
             <h2 className="text-2xl font-light text-foreground">Choose a Template</h2>
           </div>
@@ -55,7 +54,7 @@ export function TemplateSelect({ selectedTemplates, onTemplateSelect }: Template
       <div className="text-center">
         <div className="inline-flex items-center gap-3 mb-4">
           <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
-            <Sparkle size={20} className="text-primary" />
+            <SparkleIcon size={20} className="text-primary" />
           </div>
           <h2 className="text-2xl font-light text-foreground">Choose Templates</h2>
         </div>
@@ -95,7 +94,7 @@ export function TemplateSelect({ selectedTemplates, onTemplateSelect }: Template
                       : 'border-muted-foreground/30 hover:border-primary/50'
                   }`}>
                     {isSelected && (
-                      <Check size={14} className="text-primary-foreground" />
+                      <CheckIcon size={14} className="text-primary-foreground" />
                     )}
                   </div>
                 </div>

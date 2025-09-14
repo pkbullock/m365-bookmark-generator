@@ -95,7 +95,7 @@ function App() {
                     <div className="flex-1">
                       <h2 className="font-medium text-base mb-2">Customize (Optional)</h2>
                       <p className="text-muted-foreground text-sm leading-relaxed">
-                        Add, edit, or remove bookmarks to fit your needs
+                        Remove bookmarks to fit your needs
                       </p>
                     </div>
                   </div>
@@ -115,16 +115,28 @@ function App() {
             </Card>
 
             <Tabs defaultValue="templates" className="space-y-8" role="navigation">
-              <TabsList className="w-full max-w-md mx-auto grid grid-cols-3 border border-border">
-                <TabsTrigger value="templates" className="flex items-center gap-2 data-[state=active]:bg-card data-[state=active]:shadow-sm">
+              <TabsList className="h-16 w-full max-w-md mx-auto grid grid-cols-3 border border-border">
+                <TabsTrigger
+                  value="templates"
+                  className="flex items-center gap-2 relative data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-lg data-[state=active]:border-b-4 data-[state=active]:border-primary transition-all"
+                >
+                  <span className="w-5 h-5 bg-primary/20 text-primary rounded-full flex items-center justify-center text-xs font-bold mr-1">1</span>
                   <FileTextIcon size={16} />
                   Templates
                 </TabsTrigger>
-                <TabsTrigger value="manage" className="flex items-center gap-2 data-[state=active]:bg-card data-[state=active]:shadow-sm">
+                <TabsTrigger
+                  value="manage"
+                  className="flex items-center gap-2 relative data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-lg data-[state=active]:border-b-4 data-[state=active]:border-primary transition-all"
+                >
+                  <span className="w-5 h-5 bg-primary/20 text-primary rounded-full flex items-center justify-center text-xs font-bold mr-1">2</span>
                   <GearIcon size={16} />
-                  Manage
+                  Customize
                 </TabsTrigger>
-                <TabsTrigger value="preview" className="flex items-center gap-2 data-[state=active]:bg-card data-[state=active]:shadow-sm">
+                <TabsTrigger
+                  value="preview"
+                  className="flex items-center gap-2 relative data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-lg data-[state=active]:border-b-4 data-[state=active]:border-primary transition-all"
+                >
+                  <span className="w-5 h-5 bg-primary/20 text-primary rounded-full flex items-center justify-center text-xs font-bold mr-1">3</span>
                   <EyeIcon size={16} />
                   Preview
                 </TabsTrigger>
