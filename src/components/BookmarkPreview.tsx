@@ -40,7 +40,7 @@ export function BookmarkPreview({ bookmarks, selectedTemplates = [] }: BookmarkP
       } else {
         fileName = 'microsoft-365-bookmarks.html';
       }
-      
+
       downloadBookmarkFile(bookmarks, fileName);
       toast.success('Bookmark file downloaded successfully!');
     } catch (error) {
@@ -99,23 +99,50 @@ export function BookmarkPreview({ bookmarks, selectedTemplates = [] }: BookmarkP
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary font-medium min-w-4">2.</span>
-                      <span>Open Microsoft Edge and go to Settings (Alt + F)</span>
+                      <span>Open Microsoft Edge and go to Favourites (Ctrl + Shift + O)</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary font-medium min-w-4">3.</span>
-                      <span>Navigate to "Favorites" in the left sidebar</span>
+                      <span>Click on the ... at the top and select "Import Favourites"</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-primary font-medium min-w-4"></span>
+                      <span>
+                        <strong>OR</strong> Copy the link to jump to the settings{' '}
+                        <span className="inline-flex items-center gap-2">
+                          <code className="bg-muted px-1 rounded text-primary font-mono text-xs">
+                            edge://settings/profiles/importBrowsingData?start=IE11
+                          </code>
+                          <Button
+                            type="button"
+                            size="sm"
+                            variant="default"
+                            className="px-2 py-1 text-xs"
+                            onClick={() => {
+                              navigator.clipboard.writeText('edge://settings/profiles/importBrowsingData?start=IE11');
+                              toast.success('Link copied!');
+                            }}
+                          >
+                            Copy
+                          </Button>
+                        </span>
+                      </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary font-medium min-w-4">4.</span>
-                      <span>Click "Import favorites" at the bottom</span>
+                      <span>Next to "Import browser data now" click on "Import"</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary font-medium min-w-4">5.</span>
-                      <span>Select "Favorites or bookmarks HTML file" as the source</span>
+                      <span>Select "Favorites or bookmarks HTML file" under "Import from"</span>
                     </li>
+
                     <li className="flex items-start gap-3">
                       <span className="text-primary font-medium min-w-4">6.</span>
                       <span>Choose the downloaded file and click "Import"</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span><em>Tip: Be sure to show the bookmarks bar in Edge (Ctrl + Shift + B)</em></span>
                     </li>
                   </ol>
                 </div>
