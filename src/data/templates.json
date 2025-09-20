@@ -446,6 +446,13 @@
         "url": "https://admin.microsoft.com",
         "folder": "Azure",
         "iconId": "m365-admin"
+      },
+      {
+        "id": "406",
+        "name": "Azure AD Privileged Identity Management",
+        "url": "https://portal.azure.com/#view/Microsoft_Azure_PIMCommon/ResourceMenuBlade/~/MyActions/resourceId//resourceType/tenant/provider/aadroles",
+        "folder": "Azure",
+        "iconId": "azure"
       }
     ]
   },
