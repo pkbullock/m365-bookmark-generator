@@ -66,79 +66,73 @@ function App() {
 
         <main className="flex-1 border-blue-500">
           <div className="container mx-auto py-8 px-4 max-w-6xl">
-            <Card className="mb-8 border shadow-sm bg-gradient-to-r from-card via-card to-fluent-neutral-10">
-              <CardHeader className="pb-4">
-                <CardTitle className="flex items-center gap-3 text-xl font-medium">
-                  <div className="w-8 h-8 bg-primary/10 rounded-md flex items-center justify-center">
-                    <FileTextIcon size={18} className="text-primary" />
-                  </div>
-                  Quick Start Guide
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                  <div className="flex items-start gap-4">
-                    <div className="w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-sm font-medium shadow-sm">
-                      1
-                    </div>
-                    <div className="flex-1">
-                      <h2 className="font-medium text-base mb-2">Choose Template</h2>
-                      <p className="text-muted-foreground text-sm leading-relaxed">
-                        Select a predefined collection of Microsoft 365 bookmarks
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-4">
-                    <div className="w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-sm font-medium shadow-sm">
-                      2
-                    </div>
-                    <div className="flex-1">
-                      <h2 className="font-medium text-base mb-2">Customize (Optional)</h2>
-                      <p className="text-muted-foreground text-sm leading-relaxed">
-                        Remove bookmarks to fit your needs
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-4">
-                    <div className="w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-sm font-medium shadow-sm">
-                      3
-                    </div>
-                    <div className="flex-1">
-                      <h2 className="font-medium text-base mb-2">Download & Import</h2>
-                      <p className="text-muted-foreground text-sm leading-relaxed">
-                        Download the file and import it into Microsoft Edge
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
 
             <Tabs defaultValue="templates" className="space-y-8" role="navigation">
-              <TabsList className="h-16 w-full max-w-md mx-auto grid grid-cols-3 border border-border">
+              <TabsList className="h-auto w-full max-w-4xl mx-auto grid grid-cols-3 border border-border min-w-0 items-start">
                 <TabsTrigger
                   value="templates"
-                  className="flex items-center gap-2 relative data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-lg data-[state=active]:border-b-4 data-[state=active]:border-primary transition-all"
+                  className="flex flex-col items-center gap-1 px-3 py-2 w-full min-w-0
+                              data-[state=active]:bg-primary
+                              data-[state=active]:text-primary-foreground
+                              data-[state=active]:shadow-lg
+                              data-[state=active]:border-b-4
+                              data-[state=active]:border-blue-500
+                              transition-all"
                 >
-                  <span className="w-5 h-5 bg-primary/20 text-primary rounded-full flex items-center justify-center text-xs font-bold mr-1">1</span>
-                  <FileTextIcon size={16} />
-                  Templates
+                  <span className="w-5 h-5 bg-primary/20 text-primary rounded-full flex items-center justify-center text-xs font-bold mb-2 mx-auto">
+                    1
+                  </span>
+                  <span className="flex items-center gap-2 mb-1 justify-center">
+                    <FileTextIcon size={16} />
+                    <span className="font-medium">Templates</span>
+                  </span>
+                  <div className="h-18 text-xs text-muted-foreground mt-1 leading-normal break-words whitespace-normal text-center">
+                    Select a predefined collection of Microsoft 365 bookmarks
+                  </div>
                 </TabsTrigger>
+
                 <TabsTrigger
                   value="manage"
-                  className="flex items-center gap-2 relative data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-lg data-[state=active]:border-b-4 data-[state=active]:border-primary transition-all"
+                  className="flex flex-col items-center gap-1 px-3 py-2 w-full min-w-0
+                              data-[state=active]:bg-primary
+                              data-[state=active]:text-primary-foreground
+                              data-[state=active]:shadow-lg
+                              data-[state=active]:border-b-4
+                              data-[state=active]:border-blue-500
+                              transition-all"
                 >
-                  <span className="w-5 h-5 bg-primary/20 text-primary rounded-full flex items-center justify-center text-xs font-bold mr-1">2</span>
-                  <GearIcon size={16} />
-                  Customize
+                  <span className="w-5 h-5 bg-primary/20 text-primary rounded-full flex items-center justify-center text-xs font-bold mb-2 mx-auto">
+                    2
+                  </span>
+                  <span className="flex items-center gap-2 mb-1 justify-center">
+                    <GearIcon size={16} />
+                    <span className="font-medium">Customize</span>
+                  </span>
+                  <div className="h-18 text-xs text-muted-foreground mt-1 leading-normal break-words whitespace-normal text-center">
+                    Remove bookmarks to fit your needs
+                  </div>
                 </TabsTrigger>
+
                 <TabsTrigger
                   value="preview"
-                  className="flex items-center gap-2 relative data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-lg data-[state=active]:border-b-4 data-[state=active]:border-primary transition-all"
+                  className="flex flex-col items-center gap-1 px-3 py-2 w-full min-w-0
+                              data-[state=active]:bg-primary
+                              data-[state=active]:text-primary-foreground
+                              data-[state=active]:shadow-lg
+                              data-[state=active]:border-b-4
+                              data-[state=active]:border-blue-500
+                              transition-all"
                 >
-                  <span className="w-5 h-5 bg-primary/20 text-primary rounded-full flex items-center justify-center text-xs font-bold mr-1">3</span>
-                  <EyeIcon size={16} />
-                  Preview
+                  <span className="w-5 h-5 bg-primary/20 text-primary rounded-full flex items-center justify-center text-xs font-bold mb-2 mx-auto">
+                    3
+                  </span>
+                  <span className="flex items-center gap-2 mb-1 justify-center">
+                    <EyeIcon size={16} />
+                    <span className="font-medium">Preview</span>
+                  </span>
+                  <div className="h-18 text-xs text-muted-foreground mt-1 leading-normal break-words whitespace-normal text-center">
+                    Download the file and import it into Microsoft Edge
+                  </div>
                 </TabsTrigger>
               </TabsList>
 
