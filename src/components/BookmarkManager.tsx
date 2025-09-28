@@ -79,11 +79,11 @@ export function BookmarkManager({ bookmarks, onBookmarksChange }: BookmarkManage
                             />
                           </div>
                         )}
-                        <div className="flex-1 min-w-0">
-                          <h4 className="font-medium text-sm truncate mb-0.5">{bookmark.name}</h4>
+                        <div className="flex-1 min-w-0 flex items-center gap-3">
+                          <h4 className="font-medium text-sm truncate flex-shrink-0">{bookmark.name}</h4>
                           <button
                             onClick={() => handleBookmarkClick(bookmark.url)}
-                            className="text-xs text-primary hover:text-primary/80 underline underline-offset-2 truncate font-mono bg-fluent-neutral-20 px-2 py-1 rounded cursor-pointer transition-colors hover:bg-fluent-neutral-30 flex items-center gap-1 max-w-full"
+                            className="text-xs text-primary hover:text-primary/80 underline underline-offset-2 truncate font-mono bg-fluent-neutral-20 px-2 py-1 rounded cursor-pointer transition-colors hover:bg-fluent-neutral-30 flex items-center gap-1 min-w-0 flex-1"
                           >
                             <LinkIcon size={12} className="flex-shrink-0" />
                             <span className="truncate">{bookmark.url}</span>
