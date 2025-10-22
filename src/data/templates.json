@@ -404,6 +404,27 @@
         "url": "https://admin.cloud.microsoft/exchange",
         "folder": "Microsoft 365 Admin",
         "iconId": "exchange-admin"
+      },
+      {
+        "id": "212",
+        "name": "Copilot Control System",
+        "url": "https://admin.cloud.microsoft/?#/copilot/overview",
+        "folder": "Microsoft 365 Admin",
+        "iconId": "copilot"
+      },
+      {
+        "id": "213",
+        "name": "Message Center",
+        "url": "https://admin.cloud.microsoft/?#/MessageCenter",
+        "folder": "Microsoft 365 Admin",
+        "iconId": "microsoft"
+      },
+      {
+        "id": "214",
+        "name": "Service Health",
+        "url": "https://admin.cloud.microsoft/?#/servicehealth",
+        "folder": "Microsoft 365 Admin",
+        "iconId": "microsoft"
       }
     ]
   },
@@ -740,6 +761,13 @@
                 "id": "553",
                 "name": "Microsoft Q&A (Teams Dev)",
                 "url": "https://learn.microsoft.com/en-us/answers/topics/office-teams-development-routing.html",
+                "folder": "Developer Tools",
+                "iconId": "microsoft"
+            },
+            {
+                "id": "554",
+                "name": "Copilot Calculator",
+                "url": "https://www.copilotcalculator.com/",
                 "folder": "Developer Tools",
                 "iconId": "microsoft"
             }
