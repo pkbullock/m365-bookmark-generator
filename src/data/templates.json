@@ -441,6 +441,27 @@
         "iconId": "azure"
       },
       {
+        "id": "407",
+        "name": "Azure All Services",
+        "url": "https://portal.azure.com/#allservices",
+        "folder": "Azure",
+        "iconId": "azure"
+      },
+      {
+        "id": "408",
+        "name": "Azure Subscriptions",
+        "url": "https://portal.azure.com/#view/Microsoft_Azure_Billing/SubscriptionsBlade",
+        "folder": "Azure",
+        "iconId": "azure"
+      },
+      {
+        "id": "409",
+        "name": "All Azure Resources",
+        "url": "https://portal.azure.com/#view/HubsExtension/BrowseAll",
+        "folder": "Azure",
+        "iconId": "azure"
+      },
+      {
         "id": "402",
         "name": "Azure AI Foundry",
         "url": "https://ai.azure.com/",
@@ -449,8 +470,8 @@
       },
       {
         "id": "403",
-        "name": "Azure OpenAI Studio",
-        "url": "https://oai.azure.com/",
+        "name": "Azure AI Foundry - Azure OpenAI",
+        "url": "https://ai.azure.com/resource/overview",
         "folder": "Azure",
         "iconId": "aifoundry"
       },
